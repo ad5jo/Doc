@@ -1,0 +1,35 @@
+Osei Bonsu
+rm -r recursivly remove files
+
+// Open file or folder (PC only)
+
+explorer [name of file]
+
+
+
+// Open all files and folder in current directory (PC Only)
+
+explorer .
+10.20.2016 - Thursday
+
+:Q! to exit vi
+10.22.2016 class notes(Saturday)
+box model
+Flow - Floating, { float: right}
+
+*{
+	box-sizing: border-box;
+}
+
+css properties
+float: left;
+clear: both;
+overflow: auto; - makes 2 elements the same size next to each other
+positioning content
+opacity
+
+Home work git clone git@github.com:ad5jo/HW-Wireframe.git
+git add .
+git commit -m "<COMMENT>"
+git push origin master
+
