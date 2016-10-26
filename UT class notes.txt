@@ -41,8 +41,23 @@ absolute
 relative
 boxsizing boarder box
 GDT google developer tools
-css resets
-Heroku
+css resets - multiple css files - order matters. The last one is applied
+use an absolute link for reset CDN (Content Delivery Network)
+https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css
+
+bootstrap and skeleton are public css files
+must have the index.php file with a specific line of php: 
+<?php include_once("index.html"); ?>
+
+Heroku in git bash: 
+heroku create
+set up ssh key
+git push heroku master
+AWS Amason Web Services
+
+ https://mysterious-brook-42728.herokuapp.com/
+
+
 
 
 
