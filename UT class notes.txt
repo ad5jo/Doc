@@ -36,7 +36,13 @@ git push origin master
 
 10.25.2016 - Class notes
 
-
+sticky pos = 
+absolute
+relative
+boxsizing boarder box
+GDT google developer tools
+css resets
+Heroku
 
 
 
