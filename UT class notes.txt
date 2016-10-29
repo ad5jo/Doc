@@ -57,6 +57,24 @@ AWS Amason Web Services
 
  https://mysterious-brook-42728.herokuapp.com/
 
+10.27.2016
+Css typography and google fonts - aesthetic and emotional identity of a webpage
+	https://fonts.google.com
+	http://fontawesome.io/
+Pseudo 
+classes - example:
+p::after { 
+    content: " - Remember this";
+}
+
+Twitter bootstrap
+use the grid
+http://getbootstrap.com/
+<div class="container"> <p>test</p>    </div>
+skeleton
+
+10-29-2016 Saturday class notes
+
 
 
 
