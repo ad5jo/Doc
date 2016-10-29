@@ -74,6 +74,22 @@ http://getbootstrap.com/
 skeleton
 
 10-29-2016 Saturday class notes
+bootstarp
+layout
+Balsamiq
+Nav bar not a row
+class="container" has 12 col.
+Media Query Mobile Responsive (HW) MDN =>Media Types
+1. Monitor
+2. Screen Reader
+3. Print out
+mobile only websites used for limited bandwidth
+
+Goole Inspector Toggle Device Toolbar
+
+
+
+
 
 
 
