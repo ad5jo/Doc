@@ -27,13 +27,19 @@ clear: both;
 overflow: auto; - makes 2 elements the same size next to each other
 positioning content
 opacity
-
+//////////////////////////////////////////////////////////////////////////////////////
 Home work 
 git clone git@github.com:ad5jo/HW-Wireframe.git
+
 git add .
+or
+git add --update
+or
+git add "file name with spaces.txt neet quotes"
+
 git commit -m "<COMMENT>"
 git push origin master
-
+//////////////////////////////////////////////////////////////////////////////////////
 10.25.2016 - Class notes
 
 sticky pos = 
