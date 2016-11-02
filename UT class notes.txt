@@ -92,6 +92,17 @@ Media Query Mobile Responsive (HW) MDN =>Media Types
 mobile only websites used for limited bandwidth
 
 Goole Inspector Toggle Device Toolbar
+//////////////////////////////////////////////////////////////////////////////////////
+11.01.2016 Tuesday
+Theme the bootstrap defaults using a style.css file
+Javascript - 
+Hoisting 
+alert('Hello');
+The var on the left determines the type casting
+array.lenght
+Homework 3 - Game of Hangman
+
+
 
 
 
