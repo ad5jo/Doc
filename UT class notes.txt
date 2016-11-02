@@ -2,14 +2,13 @@ Osei Bonsu
 rm -r recursivly remove files
 
 // Open file or folder (PC only)
-
 explorer [name of file]
-
 
 
 // Open all files and folder in current directory (PC Only)
 
 explorer .
+//////////////////////////////////////////////////////////////////////////////////////
 10.20.2016 - Thursday
 
 :Q! to exit vi
@@ -27,7 +26,7 @@ clear: both;
 overflow: auto; - makes 2 elements the same size next to each other
 positioning content
 opacity
-//////////////////////////////////////////////////////////////////////////////////////
+
 Home work 
 git clone git@github.com:ad5jo/HW-Wireframe.git
 
@@ -35,7 +34,7 @@ git add .
 or
 git add --update
 or
-git add "file name with spaces.txt neet quotes"
+git add "file name with spaces.txt need quotes"
 
 git commit -m "<COMMENT>"
 git push origin master
@@ -62,7 +61,7 @@ git push heroku master
 AWS Amason Web Services
 
  https://mysterious-brook-42728.herokuapp.com/
-
+//////////////////////////////////////////////////////////////////////////////////////
 10.27.2016
 Css typography and google fonts - aesthetic and emotional identity of a webpage
 	https://fonts.google.com
@@ -78,7 +77,7 @@ use the grid
 http://getbootstrap.com/
 <div class="container"> <p>test</p>    </div>
 skeleton
-
+//////////////////////////////////////////////////////////////////////////////////////
 10-29-2016 Saturday class notes
 bootstarp
 layout
@@ -93,6 +92,7 @@ mobile only websites used for limited bandwidth
 
 Goole Inspector Toggle Device Toolbar
 //////////////////////////////////////////////////////////////////////////////////////
+
 11.01.2016 Tuesday
 Theme the bootstrap defaults using a style.css file
 Javascript - 
