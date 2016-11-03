@@ -1,0 +1,103 @@
+
+Heroku
+must have the index.php file with a specific line of php: 
+<?php include_once("index.html"); ?>
+
+Heroku in git bash: 
+heroku create
+set up ssh key
+git push heroku master
+AWS Amason Web Services
+
+ https://mysterious-brook-42728.herokuapp.com/
+/////////////////////////////////////////////////////////////////////////////////
+
+$ heroku create
+Creating app... done, fierce-badlands-21524
+https://fierce-badlands-21524.herokuapp.com/ | https://git.heroku.com/fierce-bad  lands-21524.git
+$ git push heroku master
+Counting objects: 66, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (62/62), done.
+Writing objects: 100% (66/66), 805.53 KiB | 0 bytes/s, done.
+Total 66 (delta 19), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote:
+remote: -----> PHP app detected
+remote:
+remote:        NOTICE: Your 'composer.json' is completely empty.
+remote:        Please change its contents to at least '{}' so it is valid JSON.
+remote:
+remote: -----> Bootstrapping...
+remote: -----> Installing platform packages...
+remote:        NOTICE: No runtime required in composer.lock; using PHP ^5.5.17
+remote:        - apache (2.4.20)
+remote:        - nginx (1.8.1)
+remote:        - php (5.6.27)
+remote: -----> Installing dependencies...
+remote:        Composer version 1.2.1 2016-09-12 11:27:19
+remote: -----> Preparing runtime environment...
+remote:        NOTICE: No Procfile, using 'web: vendor/bin/heroku-php-apache2'.
+remote: -----> Checking for additional extensions to install...
+remote: -----> Discovering process types
+remote:        Procfile declares types -> web
+remote:
+remote: -----> Compressing...
+remote:        Done: 14.7M
+remote: -----> Launching...
+remote:        Released v3
+remote:        https://fierce-badlands-21524.herokuapp.com/ deployed to Heroku
+remote:
+remote: Verifying deploy... done.
+To https://git.heroku.com/fierce-badlands-21524.git
+ * [new branch]      master -> master
+
+Dave@LAPTOP-A5OBGJH4 MINGW32 ~/ut/week 2 assignment/Bootstrap-Portfolio (master)
+$ 
+Dave@LAPTOP-A5OBGJH4 MINGW32 ~/ut/week 2 assignment/Bootstrap-Portfolio (master)
+
+Dave@LAPTOP-A5OBGJH4 MINGW32 ~/ut/week 2 assignment/Bootstrap-Portfolio (master)
+$ heroku create
+Creating app... done, stark-hamlet-89905
+https://stark-hamlet-89905.herokuapp.com/ | https://git.heroku.com/stark-hamlet-89905.git
+
+Dave@LAPTOP-A5OBGJH4 MINGW32 ~/ut/week 2 assignment/Bootstrap-Portfolio (master)
+$ git push heroku master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 290 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote:
+remote: -----> PHP app detected
+remote: -----> Bootstrapping...
+remote: -----> Installing platform packages...
+remote:        NOTICE: No runtime required in composer.lock; using PHP ^5.5.17
+remote:        - apache (2.4.20)
+remote:        - nginx (1.8.1)
+remote:        - php (5.6.27)
+remote: -----> Installing dependencies...
+remote:        Composer version 1.2.1 2016-09-12 11:27:19
+remote: -----> Preparing runtime environment...
+remote:        NOTICE: No Procfile, using 'web: vendor/bin/heroku-php-apache2'.
+remote: -----> Checking for additional extensions to install...
+remote: -----> Discovering process types
+remote:        Procfile declares types -> web
+remote:
+remote: -----> Compressing...
+remote:        Done: 14.7M
+remote: -----> Launching...
+remote:        Released v4
+remote:        https://fierce-badlands-21524.herokuapp.com/ deployed to Heroku
+remote:
+remote: Verifying deploy... done.
+To https://git.heroku.com/fierce-badlands-21524.git
+   b90742b..77d8e56  master -> master
+
+Dave@LAPTOP-A5OBGJH4 MINGW32 ~/ut/week 2 assignment/Bootstrap-Portfolio (master)
+$
+
+
