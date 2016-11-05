@@ -161,6 +161,15 @@ var y=x
 x[0]=1
 y[0]=>1 objects by reference
 
+var winner = [["tie", "lose", "win"], ["win", "tie", "lose"], ["lose", "win", "tie"]]
+
+document.write(winner[userChoice][computerChoice] + "!”);
+
+choices= ["r","p","s"]
+["r", "p", "s"]
+
+
+winner [choices.indexOf("r")][choices.indexOf("p")]
 
 
 
