@@ -105,16 +105,61 @@ Hoisting
 alert('Hello');
 The var on the left determines the type casting
 array.lenght
-Homework 3 - Game of Hangman
+Homework 3 - Game of Hangman (Due 11.10.2016)
+
+//////////////////////////////////////////////////////////////////////////////////////
+
+11.03.2016 
+Arrays in Java script
+For loops
+document.onkeyup = function(event) {
+alert("button presssed");
+consol.log(event.key);
+};
+
+document.querySelector("#test").innerHTML = html;
 
 
 
+<p>Please input a number between 1 and 10:</p>
+
+<input id="numb">
+
+<button type="button" onclick="myFunction()">Submit</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var x, text;
+
+    // Get the value of the input field with id="numb"
+    x = document.getElementById("numb").value;
+
+    // If x is Not a Number or less than one or greater than 10
+    if (isNaN(x) || x < 1 || x > 10) {
+        text = "Input not valid";
+    } else {
+        text = "Input OK";
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+
+about:blank
+var winner = [["tie", "lose", "win"], ["win", "tie", "lose"], ["lose", "win", "tie"]];
+document.write(winner[userChoice][computerChoice] + "!");
 
 
+11.5.2016 Saturday
+var x = 2
+var y=x
+x=1
+h=>2 primatives by value
 
-
-
-
+var x = [2]
+var y=x
+x[0]=1
+y[0]=>1 objects by reference
 
 
 
