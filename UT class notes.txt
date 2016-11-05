@@ -188,6 +188,12 @@ objName.name = whatever;
 
 functions are a special object. Can seve them in Arrays or Ojbects.
 
+intercom.com
+separate the data and the processing and the display method
+
+'this' in a function is the global object window
+'this' in an method is the object calling it
+
 
 
 
