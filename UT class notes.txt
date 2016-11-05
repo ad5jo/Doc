@@ -171,6 +171,25 @@ choices= ["r","p","s"]
 
 winner [choices.indexOf("r")][choices.indexOf("p")]
 
+--- Functions ---
+
+var log_array = function(arrayLog){
+    for (var i=0; i< array.log.length; i++){
+        log_array(stuff_to_log[i];
+    }
+}
+
+Objects:
+var whatever = "something";
+var objName={};
+
+objName["name"] = whatever;
+objName.name = whatever;
+
+functions are a special object. Can seve them in Arrays or Ojbects.
+
+
+
 
 
 
