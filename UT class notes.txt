@@ -194,6 +194,8 @@ separate the data and the processing and the display method
 'this' in a function is the global object window
 'this' in an method is the object calling it
 
+//////////////////////////////////////////////////////////////////////////
+11.08.2016 Tuesday Class Notes
 
 
 
