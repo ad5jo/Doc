@@ -196,6 +196,50 @@ separate the data and the processing and the display method
 
 //////////////////////////////////////////////////////////////////////////
 11.08.2016 Tuesday Class Notes
+DOM review
+Method for creating elements (append child)
+var new_obj = DOM document.createElement("div"); // not on the page yet
+To set the text of the new_obj: parent.appendchild(new_obj) // adds to the screen
+Add an attribute newDiv.setAttribute("class", "fancy")
+
+// example code:
+var x = document.getElementById("drinkOptions");   // Get the element with id="drinkOptions"
+    	for(var i = 0; i < drinkList.length ; i++)
+    	{
+    		var element = document.createElement("div");
+    		element.innerHTML = drinkList[i];
+    		x.appendChild(element)
+    	}
+
+Intro to JQuery  https://jquery.com/
+https://code.jquery.com/
+
+Javascript library (helper lib for DOM)
+add the CDN (content delivery network)
+get element by id ==> $("#clickme")
+.remove()
+var body = $('body').remove()
+now you can do body. 
+body.html
+$("document').append
+
+$('html').append(body);
+$('body').click(function(alert('hello')));
+$('h1').click(function(){$('body').append('<div> new </div>')});
+
+Classes
+$('.row').remove();
+create an element:
+var newDiv = $('<div>');
+newDiv.html('blaa blaa');
+var newDiv = $('<div>');
+$('body').append(newDiv );
+
+$.each(obj,task);
+$.map() // doesn't work on some older browsers
+clicking
+
+11.10.2016 Thursday JQuery 
 
 
 
@@ -205,3 +249,9 @@ separate the data and the processing and the display method
 
 
 
+
+
+
+
+
+.
