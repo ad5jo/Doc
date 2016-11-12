@@ -232,6 +232,7 @@ $('.row').remove();
 create an element:
 var newDiv = $('<div>');
 newDiv.html('blaa blaa');
+
 var newDiv = $('<div>');
 $('body').append(newDiv );
 
@@ -239,12 +240,22 @@ $.each(obj,task);
 $.map() // doesn't work on some older browsers
 clicking
 
+/////////////////////////////////////////////////////////////////////////
 11.10.2016 Thursday JQuery 
+.ready() wait unitl page is loaded
 
+var data = $(event.target).data() // get the jQuery version
+console.log(data):
 
+data.letter
 
+<button class="" attribute_a = "sumthin" + ass[i] >  sss </button>
 
+console(this).data("letter")
 
+Lexical Scope
+/////////////////////////////////////////////////////////////////////////
+11.12.2016 Saturday
 
 
 
