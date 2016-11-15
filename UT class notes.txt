@@ -253,10 +253,35 @@ data.letter
 
 console(this).data("letter")
 
+nthnl	[7:52 PM]  
+<img src="http://cartoon-characters.com/wp-content/uploads/2014/04/batman01.jpg" alt=""
+        class="bat"
+ style = "display:none;">
+
+aryannawim	[7:52 PM]  
+$(".laughButton").on("click", function() {
+
+       audioLaugh.play();
+     });
+
+nthnl	[7:53 PM]  
+$(".coolButton").on("click", function() {
+       $(".captainplanet").hide();
+       $(".bat").show();
+
 Lexical Scope
 /////////////////////////////////////////////////////////////////////////
 11.12.2016 Saturday
+review scope of vars
+ 
 
+'this' in a function is the global object window
+'this' in an method is the object calling it
+if a function has a dot in front of it when it is used, then it is a special function type called a method.
+
+2:00 guest speaker from Microsoft
+Ryan Joy
+Refresh Austin
 
 
 
