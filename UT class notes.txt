@@ -283,6 +283,9 @@ if a function has a dot in front of it when it is used, then it is a special fun
 Ryan Joy
 Refresh Austin
 
+////////////////////////////////////////////////////////////////////////
+
+11.15.2016 Tuesday Class Notes
 
 
 
