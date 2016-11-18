@@ -286,7 +286,21 @@ Refresh Austin
 ////////////////////////////////////////////////////////////////////////
 
 11.15.2016 Tuesday Class Notes
+subl filename.txt
+commit by stage line
+git branch
+origin is what is on git hub
+1 ahead - local code has changes not on git hub
 
+@media queries - 4 types: all, print,screen and speech
+Javascript events:
+
+A new scope is only created by using a function.
+In-class codefrom scratch Captain America game using jQuery
+
+//////////////////////////////////////////////////////////////////////////////
+
+11.17.2016 Thursday Class Notes
 
 
 
