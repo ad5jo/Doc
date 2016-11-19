@@ -302,6 +302,24 @@ In-class codefrom scratch Captain America game using jQuery
 
 11.17.2016 Thursday Class Notes
 
+window. can access a global within an object with the same variable name.
+
+timeouts
+parenthises after a function name means to call it, without () it is passed to something.
+setTimeout(func,time in ms);
+clearInterval(x)
+
+ascyncronuos using native code is use setTimeout!
+
+Context:
+var funct = function(){person.sayHi()} // will run the method properly
+
+setInterval(decriment,1000);
+clearInterval();
+function hoisting
+
+11.19.2016 Saturday
+
 
 
 
