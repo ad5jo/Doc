@@ -319,9 +319,24 @@ clearInterval();
 function hoisting
 
 11.19.2016 Saturday
+Basic Job interview skills today (social competency)
+1. Technical Questions - logic
+2. 
 
+Conditional (Ternary) Operator
+JavaScript also contains a conditional operator that assigns a value to a variable based on some condition.
 
+Syntax
+variablename = (condition) ? value1:value2 
+prime number algorithm
+var isPrime = function(num){
+ for(var i=2; i<= Math.sqrt(num); i++){
+   if(num % i === 0) return false;
+ };
+ return true;
+};
 
+high frequencey trading
 
 
 
