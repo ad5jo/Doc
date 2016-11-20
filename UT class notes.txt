@@ -194,6 +194,9 @@ separate the data and the processing and the display method
 'this' in a function is the global object window
 'this' in an method is the object calling it
 
+
+//////////////////////////////////////////////////////////////////////////
+// 				attribute			        //
 //////////////////////////////////////////////////////////////////////////
 11.08.2016 Tuesday Class Notes
 DOM review
@@ -210,6 +213,10 @@ var x = document.getElementById("drinkOptions");   // Get the element with id="d
     		element.innerHTML = drinkList[i];
     		x.appendChild(element)
     	}
+
+
+///---------------------------------------------------
+
 
 Intro to JQuery  https://jquery.com/
 https://code.jquery.com/
@@ -254,27 +261,47 @@ data.letter
 console(this).data("letter")
 
 nthnl	[7:52 PM]  
+
 <img src="http://cartoon-characters.com/wp-content/uploads/2014/04/batman01.jpg" alt=""
         class="bat"
  style = "display:none;">
 
+
+
 aryannawim	[7:52 PM]  
+
 $(".laughButton").on("click", function() {
 
+
        audioLaugh.play();
+
      });
 
+
+
 nthnl	[7:53 PM]  
+
 $(".coolButton").on("click", function() {
+
        $(".captainplanet").hide();
+
        $(".bat").show();
 
+     });
+
+
+
 Lexical Scope
-/////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////////
+// 				Calculator				//
+//////////////////////////////////////////////////////////////////////////
 11.12.2016 Saturday
+
+10-16-Austin-Class-Content/class-content/04-jQuery/4.3/Activities/4-jQueryCalculator/Solved/
+
 review scope of vars
  
-
 'this' in a function is the global object window
 'this' in an method is the object calling it
 if a function has a dot in front of it when it is used, then it is a special function type called a method.
@@ -287,7 +314,8 @@ Refresh Austin
 
 11.15.2016 Tuesday Class Notes
 subl filename.txt
-commit by stage line
+commit by stage line - TODO: learn how to stage a line or partial files. It was mentioned to be possible, but no details given.
+
 git branch
 origin is what is on git hub
 1 ahead - local code has changes not on git hub
@@ -296,6 +324,10 @@ origin is what is on git hub
 Javascript events:
 
 A new scope is only created by using a function.
+A new scope is only created by using a function.
+A new scope is only created by using a function.
+A new scope is only created by using a function.
+
 In-class codefrom scratch Captain America game using jQuery
 
 //////////////////////////////////////////////////////////////////////////////
@@ -306,8 +338,12 @@ window. can access a global within an object with the same variable name.
 
 timeouts
 parenthises after a function name means to call it, without () it is passed to something.
-setTimeout(func,time in ms);
-clearInterval(x)
+
+var x = setTimeout(func,time in ms);
+clearTimeout(x);
+
+var x = setInterval(func,time in ms);
+clearInterval(x);
 
 ascyncronuos using native code is use setTimeout!
 
@@ -318,6 +354,7 @@ setInterval(decriment,1000);
 clearInterval();
 function hoisting
 
+//////////////////////////////////////////////////////////////////////////////////////////////
 11.19.2016 Saturday
 Basic Job interview skills today (social competency)
 1. Technical Questions - logic
@@ -339,6 +376,7 @@ var isPrime = function(num){
 high frequencey trading
 
 
+////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
