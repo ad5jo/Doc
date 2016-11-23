@@ -378,7 +378,32 @@ high frequencey trading
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
 
-11.22.2016 Tuesday
+11.22.2016 Tuesday - Ajax - Json
+json formatter
+exchange data
+Application Programmers Interface - 2 types
+1. A list of customers and data
+
+2. Application program interface (API) is a set of routines, protocols, and tools for building software applications. An API specifies how software components should interact and APIs are used when programming graphical user interface (GUI) components.
+
+
+XHR are Ajax requests
+var x = {"key":"data"};
+How to turn data into a json object? JSON.stringafy(x);
+
+JSON.parse(str);
+
+$("button").click(function(){
+    $.ajax({url: "demo_test.txt", success: function(result){
+        $("#div1").html(result);
+    }});
+});
+
+http://api.jquery.com/jquery.ajax/
+
+giphy API - This is the assignment for next week
+
+event deligation for .click
 
 
 
