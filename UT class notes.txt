@@ -405,6 +405,9 @@ giphy API - This is the assignment for next week
 
 event deligation for .click
 
+12.03.2016 Saturday Class notes
+SW devs hate recruters
+
 
 
 
