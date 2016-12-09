@@ -440,6 +440,41 @@ var str = JSON.stringify(x);
 var x = JSON.parse(str);
 
 12.08.2016 Thursday Class Notes - 
+www.firebase.com
+server side storage for Javascript 
+https://console.firebase.google.com/project/ddurkee-79c86/overview
+using websockets
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+<script src="https://www.gstatic.com/firebasejs/3.6.3/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBjTtEsYFPrCdJBFGhjH0c_JBTINQJkVKs",
+    authDomain: "ddurkee-79c86.firebaseapp.com",
+    databaseURL: "https://ddurkee-79c86.firebaseio.com",
+    storageBucket: "ddurkee-79c86.appspot.com",
+    messagingSenderId: "101017078086"
+  };
+  firebase.initializeApp(config);
+</script>
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+{
+  "rules": {
+    ".read": true,
+    ".write": true
+  }
+}
+
+///
+.ref()  is the root level
+sockets are much faster than normal html traffic (allows chat usable speeds)
+
+= database.ref(".connected"); // your object
+= database.ref(".info/connected"); // special object
 
 
 
