@@ -429,11 +429,15 @@ Then review of JS basics
 debugger in code will stop
 
 
+file maker pro database frakeworker
 
+12.06.2016 Tuesday Class Notes - 
+local storage
+session storage
+document.cookie = "name=" + s_name + "; age=" + s_age + ";"
 
-
-
-
+var str = JSON.stringify(x);
+var x = JSON.parse(str);
 
 
 
