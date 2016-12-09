@@ -439,7 +439,7 @@ document.cookie = "name=" + s_name + "; age=" + s_age + ";"
 var str = JSON.stringify(x);
 var x = JSON.parse(str);
 
-
+12.08.2016 Thursday Class Notes - 
 
 
 
