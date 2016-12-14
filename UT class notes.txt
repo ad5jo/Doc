@@ -476,7 +476,34 @@ sockets are much faster than normal html traffic (allows chat usable speeds)
 = database.ref(".connected"); // your object
 = database.ref(".info/connected"); // special object
 
+Using logic.js as a starting point, 
+incorporate view tracking using Firebase on the backend.
 
+HINT: .set() overwrites everything in the specified directory, 
+so we will need to use .ref() to store bidder data and 
+connections in different folders.
+
+
+12.10.2016 Saturday Class
+matt
+snap
+
+instead of set method to replace all code, 
+use push to add to the end
+
+
+database.ref().on("value", function(snapshot) { 
+// called with any change to the database
+// 
+});
+
+database.ref().on("child_added", function(snapshot) { 
+// called for each child on the page
+// put all the code here for every child
+});
+
+
+12.13.2016 - Project workday
 
 
 
