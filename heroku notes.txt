@@ -1,4 +1,7 @@
 
+
+You can get a list of any configured remote urls with the command git remote -v
+
 Heroku
 must have the index.php file with a specific line of php: 
 <?php include_once("index.html"); ?>

@@ -38,6 +38,10 @@ git add "file name with spaces.txt need quotes"
 
 git commit -m "<COMMENT>"
 git push origin master
+
+You can get a list of any configured remote urls with the command git remote -v
+
+
 //////////////////////////////////////////////////////////////////////////////////////
 10.25.2016 - Class notes
 
@@ -64,6 +68,16 @@ AWS Amason Web Services
 
  https://mysterious-brook-42728.herokuapp.com/
 /////////////////////////////////////////////////////////////////////////////////
+
+
+Setting up a git remote origin
+
+Using SSH
+git remote add origin ssh://login@IP/path/to/repository
+
+Using HTTP
+git remote add origin http://IP/path/to/repository
+
 
 
 //////////////////////////////////////////////////////////////////////////////////////
