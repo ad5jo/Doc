@@ -209,6 +209,315 @@ separate the data and the processing and the display method
 'this' in an method is the object calling it
 
 
+//////////////////////////////////////////////////////////////////////////
+// 				attribute			        //
+//////////////////////////////////////////////////////////////////////////
+11.08.2016 Tuesday Class Notes
+DOM review
+Method for creating elements (append child)
+var new_obj = DOM document.createElement("div"); // not on the page yet
+To set the text of the new_obj: parent.appendchild(new_obj) // adds to the screen
+Add an attribute newDiv.setAttribute("class", "fancy")
+
+// example code:
+var x = document.getElementById("drinkOptions");   // Get the element with id="drinkOptions"
+    	for(var i = 0; i < drinkList.length ; i++)
+    	{
+    		var element = document.createElement("div");
+    		element.innerHTML = drinkList[i];
+    		x.appendChild(element)
+    	}
+
+
+///---------------------------------------------------
+
+
+Intro to JQuery  https://jquery.com/
+https://code.jquery.com/
+
+Javascript library (helper lib for DOM)
+add the CDN (content delivery network)
+get element by id ==> $("#clickme")
+.remove()
+var body = $('body').remove()
+now you can do body. 
+body.html
+$("document').append
+
+$('html').append(body);
+$('body').click(function(alert('hello')));
+$('h1').click(function(){$('body').append('<div> new </div>')});
+
+Classes
+$('.row').remove();
+create an element:
+var newDiv = $('<div>');
+newDiv.html('blaa blaa');
+
+var newDiv = $('<div>');
+$('body').append(newDiv );
+
+$.each(obj,task);
+$.map() // doesn't work on some older browsers
+clicking
+
+/////////////////////////////////////////////////////////////////////////
+11.10.2016 Thursday JQuery 
+.ready() wait unitl page is loaded
+
+var data = $(event.target).data() // get the jQuery version
+console.log(data):
+
+data.letter
+
+<button class="" attribute_a = "sumthin" + ass[i] >  sss </button>
+
+console(this).data("letter")
+
+nthnl	[7:52 PM]  
+
+<img src="http://cartoon-characters.com/wp-content/uploads/2014/04/batman01.jpg" alt=""
+        class="bat"
+ style = "display:none;">
+
+
+
+aryannawim	[7:52 PM]  
+
+$(".laughButton").on("click", function() {
+
+
+       audioLaugh.play();
+
+     });
+
+
+
+nthnl	[7:53 PM]  
+
+$(".coolButton").on("click", function() {
+
+       $(".captainplanet").hide();
+
+       $(".bat").show();
+
+     });
+
+
+
+Lexical Scope
+
+//////////////////////////////////////////////////////////////////////////
+// 				Calculator				//
+//////////////////////////////////////////////////////////////////////////
+11.12.2016 Saturday
+
+10-16-Austin-Class-Content/class-content/04-jQuery/4.3/Activities/4-jQueryCalculator/Solved/
+
+review scope of vars
+ 
+'this' in a function is the global object window
+'this' in an method is the object calling it
+if a function has a dot in front of it when it is used, then it is a special function type called a method.
+
+2:00 guest speaker from Microsoft
+Ryan Joy
+Refresh Austin
+
+////////////////////////////////////////////////////////////////////////
+
+11.15.2016 Tuesday Class Notes
+subl filename.txt
+commit by stage line - TODO: learn how to stage a line or partial files. It was mentioned to be possible, but no details given.
+
+git branch
+origin is what is on git hub
+1 ahead - local code has changes not on git hub
+
+@media queries - 4 types: all, print,screen and speech
+Javascript events:
+
+A new scope is only created by using a function.
+A new scope is only created by using a function.
+A new scope is only created by using a function.
+A new scope is only created by using a function.
+
+In-class codefrom scratch Captain America game using jQuery
+
+//////////////////////////////////////////////////////////////////////////////
+
+11.17.2016 Thursday Class Notes
+
+window. can access a global within an object with the same variable name.
+
+timeouts
+parenthises after a function name means to call it, without () it is passed to something.
+
+
+
+
+///////////////////////////// TIMERS ///////////////////////////////////////////////////
+///////////////////////////// TIMERS ///////////////////////////////////////////////////
+///////////////////////////// TIMERS ///////////////////////////////////////////////////
+///////////////////////////// TIMERS ///////////////////////////////////////////////////
+
+
+var x = setTimeout(func,time in ms);
+clearTimeout(x);
+
+var x = setInterval(func,time in ms);
+clearInterval(x);
+
+ascyncronuos using native code is use setTimeout!
+
+Context:
+var funct = function(){person.sayHi()} // will run the method properly
+
+setInterval(decriment,1000);
+clearInterval();
+function hoisting
+
+
+///////////////////////////// TIMERS ///////////////////////////////////////////////////
+///////////////////////////// TIMERS ///////////////////////////////////////////////////
+///////////////////////////// TIMERS ///////////////////////////////////////////////////
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+11.19.2016 Saturday
+Basic Job interview skills today (social competency)
+1. Technical Questions - logic
+2. 
+
+Conditional (Ternary) Operator
+JavaScript also contains a conditional operator that assigns a value to a variable based on some condition.
+
+Syntax
+variablename = (condition) ? value1:value2 
+prime number algorithm
+var isPrime = function(num){
+ for(var i=2; i<= Math.sqrt(num); i++){
+   if(num % i === 0) return false;
+ };
+ return true;
+};
+
+high frequencey trading
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+11.22.2016 Tuesday - Ajax - Json
+json formatter
+exchange data
+Application Programmers Interface - 2 types
+1. A list of customers and data
+
+2. Application program interface (API) is a set of routines, protocols, and tools for building software applications. An API specifies how software components should interact and APIs are used when programming graphical user interface (GUI) components.
+
+
+XHR are Ajax requests
+var x = {"key":"data"};
+How to turn data into a json object? JSON.stringafy(x);
+
+JSON.parse(str);
+
+$("button").click(function(){
+    $.ajax({url: "demo_test.txt", success: function(result){
+        $("#div1").html(result);
+    }});
+});
+
+http://api.jquery.com/jquery.ajax/
+
+giphy API - This is the assignment for next week
+
+event deligation for .click
+
+12.03.2016 Saturday Class notes
+SW devs hate recruters
+7.3 new youk times
+Today first hour work on NYT
+Then review of JS basics
+
+debugger in code will stop
+
+
+file maker pro database frakeworker
+
+12.06.2016 Tuesday Class Notes - 
+local storage
+session storage
+document.cookie = "name=" + s_name + "; age=" + s_age + ";"
+
+var str = JSON.stringify(x);
+var x = JSON.parse(str);
+
+12.08.2016 Thursday Class Notes - 
+www.firebase.com
+server side storage for Javascript 
+https://console.firebase.google.com/project/ddurkee-79c86/overview
+using websockets
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+<script src="https://www.gstatic.com/firebasejs/3.6.3/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBjTtEsYFPrCdJBFGhjH0c_JBTINQJkVKs",
+    authDomain: "ddurkee-79c86.firebaseapp.com",
+    databaseURL: "https://ddurkee-79c86.firebaseio.com",
+    storageBucket: "ddurkee-79c86.appspot.com",
+    messagingSenderId: "101017078086"
+  };
+  firebase.initializeApp(config);
+</script>
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+{
+  "rules": {
+    ".read": true,
+    ".write": true
+  }
+}
+
+///
+.ref()  is the root level
+sockets are much faster than normal html traffic (allows chat usable speeds)
+
+= database.ref(".connected"); // your object
+= database.ref(".info/connected"); // special object
+
+Using logic.js as a starting point, 
+incorporate view tracking using Firebase on the backend.
+
+HINT: .set() overwrites everything in the specified directory, 
+so we will need to use .ref() to store bidder data and 
+connections in different folders.
+
+
+12.10.2016 Saturday Class
+matt
+snap
+
+instead of set method to replace all code, 
+use push to add to the end
+
+
+database.ref().on("value", function(snapshot) { 
+// called with any change to the database
+// 
+});
+
+database.ref().on("child_added", function(snapshot) { 
+// called for each child on the page
+// put all the code here for every child
+});
+
+
+12.13.2016 - Project workday
 
 
 
@@ -217,3 +526,8 @@ separate the data and the processing and the display method
 
 
 
+
+
+
+
+.
