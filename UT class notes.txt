@@ -520,7 +520,9 @@ database.ref().on("child_added", function(snapshot) {
 12.13.2016 - Project workday
 
 1.5.2017 - project work day (project demo due in 2 days.)
-
+http://www.brewerydb.com/developers/apps
+App name: GetBeer
+API Key:  17859058d9206f9ea17ed27291f021e0
 
 
 
