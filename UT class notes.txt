@@ -560,6 +560,8 @@ quandl - stocks/currency/commodities
 demo stock c pare
 nexmo texting API
 
+01.10.2017 Tuesday Class
+Node.js
 
 
 
