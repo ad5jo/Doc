@@ -560,9 +560,44 @@ quandl - stocks/currency/commodities
 demo stock c pare
 nexmo texting API
 
-01.10.2017 Tuesday Class
-Node.js
+01.10.2017 Tuesday Class - Node.js
+Create and write our own APIs
+there are things called node modules
 
+node -v
+no window object
+has argument support
+
+$ node hello_js.js
+Hellloooooo
+
+console.log(process.argv);
+
+Proxy server
+require() // this is used to load libraries (only the Exports in the lib.)
+when we want to share code several places
+var x = require('./hello.js');
+console.log(x);
+
+exports.FavoriteNewGirl = [
+'Shelby'
+];
+
+exports.FavoriteOldGirl = [
+'Steve'
+];
+
+var notFavoriteAtAll = ['Robert the Second'];
+exports.FavoriteVet = ['Robert the Second'];
+
+/////////////////////////////////////////////////////////////////
+AWS web services
+echo api
+text to speach
+
+twitter
+imdb
+Spotify
 
 
 
