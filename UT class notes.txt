@@ -523,6 +523,43 @@ database.ref().on("child_added", function(snapshot) {
 http://www.brewerydb.com/developers/apps
 App name: GetBeer
 API Key:  17859058d9206f9ea17ed27291f021e0
+http://api.brewerydb.com/v2/?key=17859058d9206f9ea17ed27291f021e0
+{
+"message": "Request Successful",
+"data": "You have reached the BreweryDB.com API.  For access, check out http://www.brewerydb.com/developers",
+"status": "success"
+}
+http://api.brewerydb.com/v2/search?key=17859058d9206f9ea17ed27291f021e0&q=guinness&type=beer
+--------------------------------------------------------------------------------------
+
+YELP
+
+Consumer Key	WQsQwze98OsJk6tZlUWtWA
+Consumer Secret	1I-mAH8p88GpuE0u0x0s3xxENaQ
+Token	eemoLGCRg6NHIY2Smkd8BSXZ4DeGh4tj
+Token Secret	Tk-4NUC4Dzw0cFG_Gryog_5Vmh8
+
+
+1.7.2016 - Saturday Present Project 1
+
+API:
+friendly chat
+Find ticket masters
+validate zip codes
+austin crime database
+
+
+
+materialize instead of bootstrap
+iconfinder
+google places
+cocktail DB
+malt io
+chart.js
+quandl - stocks/currency/commodities
+demo stock c pare
+nexmo texting API
+
 
 
 
