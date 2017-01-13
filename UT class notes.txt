@@ -599,6 +599,100 @@ twitter
 imdb
 Spotify
 
+////////////////////////////////////////////////////////////
+
+exports.handeler = function (event, context, callback)
+{
+//connect to spotify
+// call my mother
+// text me something
+
+callback ){text:'hello'})
+}
+
+http://asdfasdfsd/funasdfa
+
+
+///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+
+1.12.2017 Thursday node??
+
+nodejs.org has all the documentation
+/////////////////////////////////////////////////////////////////////
+
+writefile
+// NPM Package for reading and writing files
+var fs = require("fs");
+
+// This block of code will create a file called "movies.txt".
+// It will then print "Inception, Die Hard" in the file
+fs.writeFile("movies.txt", "Inception, Die Hard", function(err) {
+
+  // If the code experiences any errors it will log the error to the console.
+  if (err) {
+    return console.log(err);
+  }
+
+  // Otherwise, it will print: "movies.txt was updated!"
+  console.log("movies.txt was updated!");
+
+});
+////////////////////////////////////////////////////////////////
+
+var fileContents = fs.readFileSync('./views/' + templateName + '.html', 'utf8');
+
+settimeout(0)
+to make sync code be ascync
+
+/////////////////////////////////////////////////////////////////
+npm install lodash
+npm install --save request
+package.json is a list of dependancies (node modules)
+create
+
+npm install request
+npm init
+
+visual studio code
+click the No Bug icon
+click the gear - select environment: node js
+make sure the correct file is specified.(program:) Change it if needed.
+Add break points
+click the play button
+
+
+// Include the request npm package (Don't forget to run "npm install request" in this folder first!)
+var request = require("request");
+
+// Then run a request to the OMDB API with the movie specified
+request("http://www.omdbapi.com/?t=remember+the+titans&y=&plot=short&r=json", function(error, response, body) {
+
+  // If the request is successful (i.e. if the response status code is 200)
+  if (!error && response.statusCode === 200) {
+
+    // Parse the body of the site and recover just the imdbRating
+    // (Note: The syntax below for parsing isn't obvious. Just spend a few moments dissecting it).
+    console.log("The movie's rating is: " + JSON.parse(body).imdbRating);
+  }
+});
+
+
+////////////////////////////////////////////////////////////////////////////////
+
+https://www.omdbapi.com/
+
+npm start
+
+
+
+
+
+
+
+
+
+
 
 
 
