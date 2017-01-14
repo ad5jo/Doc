@@ -685,7 +685,9 @@ https://www.omdbapi.com/
 npm start
 
 
-
+//////////////////////////////////////////////////////////////////////////////////
+1.14.2017 Saturday Clas at Thompson Conference Center
+10.3	Sat, Jan 14, 2017	Sat, Jan 14, 2017	NPM Packages
 
 
 
