@@ -686,8 +686,72 @@ npm start
 
 
 //////////////////////////////////////////////////////////////////////////////////
-1.14.2017 Saturday Clas at Thompson Conference Center
+1.14.2017 Saturday Class at Thompson Conference Center
 10.3	Sat, Jan 14, 2017	Sat, Jan 14, 2017	NPM Packages
+use slice instead of a for loop
+
+var numbers = (process.argv).slice(2);
+
+function sorting(a,b) {
+    return a - b;
+}
+
+var solution = numbers.map(parseFloat).sort(sorting);
+console.log(solution);`
+
+///////////////////
+before you require a library you need to install the package using NPM
+use a call back to process a  request asyc
+event que
+npm init - creates a JSON package using a wizard
+npm install request --save // it will install the depencancies for you
+exclude the node modules: node_modules
+
+you can have a global git ignore
+
+.ignore - 
+// glob
+
+npm install weather-js
+//////////////////////
+// Basic Node application for requesting data from the OMDB website
+// Here we incorporate the "request" npm package
+var request = require("request");
+
+// We then run the request module on a URL with a JSON
+request("http://www.omdbapi.com/?t=remember+the+titans&y=&plot=short&r=json", function(error, response, body) {
+
+  // If there were no errors and the response code was 200 (i.e. the request was successful)...
+  if (!error && response.statusCode === 200) {
+
+    // Then we print out the imdbRating
+    console.log("The movie's rating is: " + JSON.parse(body).imdbRating);
+  }
+});
+///////////////////////
+// Here we include the weather-js so we can use it in our Node application.
+var weather = require("weather-js");
+
+// Then we use the package to search for the weather at a location
+weather.find({ search: "Anchorage, AK", degreeType: "F" }, function(err, result) {
+
+  // If there is an error log it.
+  if (err) {
+    console.log(err);
+  }
+
+  // If there is no error... then print out the weather data.
+  // We use JSON.stringify to print the data in string format.
+  // We use the JSON.stringify argument of "2" to make the format pretty.
+  // See link here: http://stackoverflow.com/questions/4810841/how-can-i-pretty-print-json-using-javascript
+  console.log(JSON.stringify(result, null, 2));
+
+});
+///////////////////////
+.then is similar to a callback
+
+
+
 
 
 
