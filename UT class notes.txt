@@ -751,11 +751,82 @@ weather.find({ search: "Anchorage, AK", degreeType: "F" }, function(err, result)
 .then is similar to a callback
 
 
+//////////////////////////////////////////////////////////////////////////////////
+1.19.2017 Thursday Class at Norse Conference Center : Javascript Constructors Pt I and closure
+
+Constructors - The function name starts with a capitol.
+the new keyword makes a function return an object as a constructor
+
+Dogs.__proto__
+array.<tab>
+animal.prototype.fur = "fuzzy"
+constructor is a function
+.HasOwnProperty('fur')
+constructor has a prototype
+
+for (var i in obj) {console.log(i)}
 
 
+///////////////////////////////////////////////////////////////////////////////////
+
+01.21.2017 Class notes: Javascript Constructors Pt II, recursion and JS Callbacks
+
+to creat a namespace for each request:
+1.
+var request = require('request');
+for(var i = 0; i < 10; i++){
+    (function(index) {
+    request('http://www.google.com', function(){
+      console.log(index);}, i);
+    })(i);
+}
+
+2.
+`var request = require('request');
+for (var i = 0; i < 10; i++) {
+  function makeSync(i) {
+      request('http://www.google.com', function() {
+          console.log(i); // 1 through 10
+      })
+  }
+  makeSync(i)
+}`
 
 
+/////
 
+osei [10:27 AM] 
+Instructions
+
+In this activity, we are going to create a constructor function called "Programmer" which can be used to create objects containing information on various programmers.
+
+Your "Programmer" constructor should be able to take in the following information...
+
+The programmer's name
+Their position/job title
+How old they are
+Favorite programming language
+Now create a method for the constructor that would print all of the information contained within an object to the console.
+
+Finally, create a "Programmer" object and call the method to print its contents
+
+Recursion
+Type Script
+
+To run the application from Bash:
+1. npm install inquirer
+2. node programmer.js
+
+// 11.3 Javascript Callbacks
+
+In Class Assignment is a weather application that accepts arguments
+install date --save
+require date
+
+
+01.24.2017 MySQL
+
+SELECT * selects every field of a record
 
 
 
