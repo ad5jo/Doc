@@ -827,6 +827,10 @@ require date
 01.24.2017 MySQL
 
 SELECT * selects every field of a record
+UPDATE ... 
+DELETE ...
+
+
 
 
 
