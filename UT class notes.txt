@@ -823,17 +823,135 @@ In Class Assignment is a weather application that accepts arguments
 install date --save
 require date
 
+#####################################################################################
+To solve this:
+press "i"
+write your merge message.
+press "esc"
+write ":wq"
+then press enter.
+osx - Please enter a commit message to explain why this merge is ...
+stackoverflow.com/.../please-enter-a-commit-message-to-explain-why-this-merge-is-nec...
+######################################################################################
+
+
+
+
 
 01.24.2017 MySQL
 
 SELECT * selects every field of a record
 UPDATE ... 
 DELETE ...
+DROP TABLE ...
+
+CREATE DATABASE inclass_food_songs_db;
 
 
 
+USE inclass_food_songs_db;
 
 
+
+CREATE TABLE favorite_foods (
+  
+id INTEGER(11) AUTO_INCREMENT NOT NULL primary key,
+
+  food VARCHAR(50) NOT NULL,
+
+  score INTEGER(50)
+
+);
+
+
+
+CREATE TABLE favorite_songs (
+  
+id INTEGER(11) AUTO_INCREMENT NOT NULL primary key,
+
+  song VARCHAR(50) NOT NULL,
+
+  artist VARCHAR(50),
+
+  score INTEGER(50)
+
+);
+
+
+
+CREATE TABLE favorite_movies (
+  
+id INTEGER(11) AUTO_INCREMENT NOT NULL primary key,
+  film VARCHAR(50) NOT NULL,
+
+  five_times BOOLEAN,
+
+  score INTEGER(50)
+
+);
+
+**** npm MYSQL
+
+id allow us to track things
+
+UPDATE [LOW_PRIORITY] [IGNORE] table_reference
+    SET col_name1={expr1|DEFAULT} [, col_name2={expr2|DEFAULT}] ...
+    [WHERE where_condition]
+    [ORDER BY ...]
+    [LIMIT row_count]
+
+
+CREATE TABLE programming_languages (
+  id INTEGER(11) AUTO_INCREMENT NOT NULL primary key,
+  languages VARCHAR(50) NOT NULL,
+  rating INTEGER(50)
+);
+
+
+INSERT INTO programming_languages (languages,rating)
+VALUES ("javascript", 50);
+INSERT INTO programming_languages (languages,rating)
+VALUES ("php", 25);
+INSERT INTO programming_languages (languages,rating)
+VALUES ("react", 15);
+
+UPDATE  programming_languages
+SET languages="AJAX" where id = 1;
+
+To see the grid:
+select * from programming_languages;
+
+//////////////////////////////////////////////////////////
+
+create table pets(
+name VARCHAR(50) NOT NULL,
+breed VARCHAR(50) NOT NULL
+
+);
+
+/// join
+
+select * from people 
+inner join pets 
+on people.pet_name = pet.name
+
+select * from people 
+left join pets 
+on people.pet_name = pet.name
+
+
+select * from people 
+right join pets 
+on people.pet_name = pet.name
+
+
+sql injection attack
+https://xkcd.com/327/
+On server side code check for DROP, escape the inputs and sanitize inputs
+
+inner join
+left join
+right join
 
 
 
