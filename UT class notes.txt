@@ -954,6 +954,52 @@ left join
 right join
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 1.26.2017 - Node - MySQL Integration
+fizz buzz in 10 minutes
+
+npm install mysql
+var mysql = require("mysql"); // npm install mysql
+
+// in_class_music_db
+CREATE DATABASE music_db;
+
+USE music_db;
+
+CREATE TABLE songs (
+
+  
+id INTEGER(11) AUTO_INCREMENT NOT NULL primary key,
+
+
+	title VARCHAR(50) NOT NULL,
+
+	artist VARCHAR(50) NOT NULL,
+
+	genre VARCHAR(50) NOT NULL
+
+);
+
+
+CRUD
+-----------
+CREATE -
+READ - 
+UPDATE - 
+DELETE - 
+
+
+//////////////////////////////////////////
+magic tricks
+
+shaverda [9:04 PM] 
+select * from [table name]
+
+in the connection use ? then specify using js object
+
+
+
+
+
+
 
 
 
