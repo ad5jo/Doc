@@ -996,7 +996,20 @@ select * from [table name]
 in the connection use ? then specify using js object
 
 /////////////////////////////////////////////////////////////////////////////////////////////
-1.28.2017 
+1.28.2017 Career hour 8-9am
+Dan Murrell
+continious context
+Swift Playground - compiles as you type the code. Originally designed for children
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+Node - MySQL Integration
+Massive MySQL Data Project
+
+
+
+
 
 
 
