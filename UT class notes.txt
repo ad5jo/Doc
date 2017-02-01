@@ -995,6 +995,30 @@ select * from [table name]
 
 in the connection use ? then specify using js object
 
+connection.query("SELECT * FROM songs WHERE genre=?", ["Dance"],
+function(err, res) {
+  for (var i = 0; i < res.length; i++) {
+    console.log(res[i].id + " | " + res[i].title + " | " + res[i].artist + " | " + res[i].genre);
+  }
+});
+
+connection.query("INSERT INTO products SET ?", {
+  flavor:"Rocky Road",
+  price:3.00,
+  quantity:50
+}, function(err, res) {});
+
+connection.query("UPDATE products SET ? WHERE ?", 
+[ 
+  {quantity: 100},
+  {flavor: "Rocky Road"}
+]
+,function(err, res) {});
+
+
+connection.query("DELETE FROM products WHERE ?", {flavor: "strawberry"},
+ function(err, res) {});
+
 /////////////////////////////////////////////////////////////////////////////////////////////
 1.28.2017 Career hour 8-9am
 Dan Murrell
@@ -1008,10 +1032,33 @@ Node - MySQL Integration
 Massive MySQL Data Project
 
 
+// don't need exacr spelling
+SELECT * FROM someting WHERE name LIKE '%osea%'
+
+// agrigation query
+SELECT * FROM someting GROUP BY  artistname  HAVING count(*) >1;
 
 
+sql is a set style language
 
+ALTER TABLE
+ADD INDEX
 
+jh.rocks [1:52 PM] 
+
+SELECT distinct top5000.artist, top5000.year, topalbums.year, topalbums.album
+
+FROM top5000
+
+INNER JOIN topalbums
+ON top5000.artist=topalbums.artist and top5000.year=topalbums.year
+
+ORDER BY top5000.year
+WHERE top5000.artist = 'what you are looking for' and topalbums.artist = 'what you are looking for'
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
+12.3	Mon, Jan 30, 2017	Tue, Jan 31, 2017	Massive MySQL Data Project
 
 
 
