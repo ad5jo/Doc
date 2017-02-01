@@ -1060,6 +1060,40 @@ WHERE top5000.artist = 'what you are looking for' and topalbums.artist = 'what y
 
 12.3	Mon, Jan 30, 2017	Tue, Jan 31, 2017	Massive MySQL Data Project
 
+/////////////////////////////////////////////////////////////////
+
+npm install --save request
+package.json is a list of dependancies (node modules)
+create
+
+npm install request
+npm init
+
+Request is designed to be the simplest way possible to make http calls. It supports HTTPS and follows redirects by default.
+
+var request = require('request');
+request('http://www.google.com', function (error, response, body) {
+  if (!error && response.statusCode == 200) {
+    console.log(body) // Show the HTML for the Google homepage. 
+  }
+})
+
+///---------------------------------------------------------------------------------------------------------------
+
+What is the --save option for npm install?
+have a package.json file. Start by running npm init to create one. Then calls to npm install --save or npm install --save-dev or npm install --save-optional will update the package.json to list your dependencies.
+
+By default, NPM simply installs a package under node_modules. When you're trying to install dependencies for your app/module, you would need to first install them, and then add them (along with the appropriate version number) to the dependencies section of your package.json.
+
+The --save option instructs NPM to include the package inside of the dependencies section of your package.json automatically, thus saving you an additional step.
+
+In addition, there are the complementary options --save-dev and --save-optional which save the package under devDependencies and optionalDependencies, respectively. This is useful when installing development-only packages, like grunt or your testing library.
+
+It's documented in the documentation for npm install
+
+
+///---------------------------------------------------------------------------------------------------------------
+
 
 
 
