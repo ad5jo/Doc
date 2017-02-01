@@ -620,6 +620,11 @@ http://asdfasdfsd/funasdfa
 
 nodejs.org has all the documentation
 /////////////////////////////////////////////////////////////////////
+npm install something   // will install the dependency only
+and 
+npm install something --save // install the dependency and add it to your package.json
+
+
 
 writefile
 // NPM Package for reading and writing files
@@ -646,6 +651,16 @@ settimeout(0)
 to make sync code be ascync
 
 /////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////
+
+npm install something   // will install the dependency only
+and 
+npm install something --save // install the dependency and add it to your package.json
+
+
 npm install lodash
 npm install --save request
 package.json is a list of dependancies (node modules)
@@ -1148,6 +1163,9 @@ Be sure to se fs to serve your HTML files.
 */
 
 
+npm install something   // will install the dependency only
+and 
+npm install something --save // install the dependency and add it to your package.json
 
 
 
