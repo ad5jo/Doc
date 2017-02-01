@@ -1058,7 +1058,9 @@ WHERE top5000.artist = 'what you are looking for' and topalbums.artist = 'what y
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
 
-12.3	Mon, Jan 30, 2017	Tue, Jan 31, 2017	Massive MySQL Data Project
+12.3	Mon, Jan 30, 2017	Tue, Jan 31, 2017	Massive MySQL Data Project (<-- this was last class. We are 1 class ahead)
+							Intro to Node Web Servers
+
 
 /////////////////////////////////////////////////////////////////
 
@@ -1093,6 +1095,63 @@ It's documented in the documentation for npm install
 
 
 ///---------------------------------------------------------------------------------------------------------------
+
+Day 39 Server-Side!
+
+We will create our first webserver
+
+2 most important concepts
+1. what is express server (express.js)
+2. How to handle it / Route it
+
+Creating a server
+----------------------- full server --------------------
+var http = require("http");
+var PORT = 8080;
+function handleRequest(request, response){
+response.end("It works Path Hit: " + response.url );
+}
+
+// use Node http package to create our server
+var server = http.createServer(handleRequest);
+
+server.listen(PORT, Function() {
+console.log("Server listening on http://localhost:%s", PORT);
+}
+----------------------- full server --------------------
+
+3306 is the port for MySQL
+Always use asyncronous code on the server
+
+response 200 => Success
+res.writeHead(200, {"content type" : "text/html"}); // this may not be correct
+// But if the responce isn't JSON we need to tell the browser it is text and not JSON
+res.write(some_html); // appends to you html
+res.end (my_html); // sends the html
+
+html file could be a file. read in using package "fs"
+
+npm mustache
+https://mustache.github.io/
+
+/*
+Instructions:
+
+Create a website with four routes:
+Home
+Favorite Food
+Favorite Movies
+Favorite CSS Frameworks
+Each route should be triggered by a different URL.
+Each route should display an HTML page listing your favorite three things of each.
+Be sure to se fs to serve your HTML files.
+*/
+
+
+
+
+
+
 
 
 
