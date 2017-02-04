@@ -1167,10 +1167,24 @@ npm install something   // will install the dependency only
 and 
 npm install something --save // install the dependency and add it to your package.json
 
+//////////////////////////////////////////////////////////
+
+13.2	Sat, Feb 2, 2017	Intro to Express Servers
+A server is software to handle requests with responses and some random tasks
+Express makes server creation easy http://expressjs.com/
+
+npm install
+
+app.get("/", function(req, res) { // get is what is responded to
+	res.send("Welcome");
+}
+
+https://localhost:3000
 
 
+app.get("/:characters", ....
 
-
+var c = characters.filter(c=>c.routName === chosen)
 
 
 
