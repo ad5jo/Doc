@@ -1186,8 +1186,14 @@ app.get("/:characters", ....
 
 var c = characters.filter(c=>c.routName === chosen)
 
+/////////////////////////////////////////////////////////////////////////////////////
+02.04.2017 
+13.3	Tue, Feb 7, 2017	Hot Restaurant - Backend Application	
+14.1	Thu, Feb 9, 2017	Intro to Handlebars
+Express Review
 
-
+CRUD - Create,_read,_update_and_delete
+CRUD - Create,_read,_update_and_delete
 
 
 
