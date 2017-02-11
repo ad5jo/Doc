@@ -1203,6 +1203,46 @@ res.end
 /////////////////////////////////////////////////////////////////////////////////////
 02.04.2017 14.1	Thu, Feb 7, 2017	Intro to Handlebars
 
+/////////////////////////////////////////////////////////////////////////////////////
+14.2	Sat, Feb 9, 2017  REST	Express.js + Handlebars.js + MySQL
+
+http://www.restapitutorial.com/lessons/whatisrest.html
+
+npm install rest
+
+CRUD - Create,_read,_update_and_delete
+
+REST interface
+post http://url/animals/ create a new animal
+index.html
+
+return {
+id: 1,
+type: dog
+}
+
+get http://url/animals/ list all the animals
+get http://url/animals/1 list a specific animal
+
+put http://url/animals/1 {fur:true} update animal
+
+return {
+id: 1,
+type: dog
+fur: true
+}
+
+delete http://url/animals/1 //return 200
+
+
+1. set express server
+2. set up handle bars
+3. set sql
+4. set up parser
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+14.3	Sat, Feb 11, 2017	Intro to ORMs
 
 
 
