@@ -1241,8 +1241,94 @@ delete http://url/animals/1 //return 200
 4. set up parser
 
 /////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
 
 14.3	Sat, Feb 11, 2017	Intro to ORMs
+easier to write sql query's
+
+Next week sql-ize
+method = DELETE
+
+// the actual routes in the server.js file next:
+app.get("/",function )
+app.put('/:id', )
+
+var orm = require("./config/orm.js");
+var return_val = orm.selectwhere("pets","animal_name", "rachel");
+
+need to use a call back function
+can use a promise
+can use await
+
+Object-relational mapping (ORM, O/RM, and O/R mapping tool) in computer science is a programming technique for converting data between incompatible type systems in object-oriented programming languages. This creates, in effect, a "virtual object database" that can be used from within the programming language.
+Object-relational mapping - Wikipedia
+https://en.wikipedia.org/wiki/Object-relational_mapping
+
+
+,cp)m {
+...
+async connection.query...
+if (cb) cb(result);
+}0;
+
+var orm = require("./config/orm.js");
+
+// Find a pet in the pets table by an animal_name of Rachel.
+orm.selectWhere("pets", "animal_name", "Rachel", function(data){
+  console.log('this works:', data);
+});
+
+
+var connection = require("./connection.js");
+
+// Object Relational Mapper (ORM)
+
+var connection = require("../config/connection.js");
+
+var orm = {
+  selectWhere: function (tableInput, colToSearch, valOfCol, cb) {
+    var queryString = "SELECT * FROM ?? WHERE ?? = ?";
+
+    connection.query(queryString, [tableInput, colToSearch, valOfCol], function (err, result) {
+      cb(result);
+    });
+  },
+
+  selectWherePromise: function (tableInput, colToSearch, valOfCol) {
+    return new Promise(function (resolve, reject) {
+      var queryString = "SELECT * FROM ?? WHERE ?? = ?";
+      connection.query(queryString, [tableInput, colToSearch, valOfCol], function (err, result) {
+        resolve(result);
+      });
+    });
+  }
+};
+
+module.exports = orm;
+
+
+///////
+
+orm
+  .selectWherePromise("parties", "party_type", "grown-up")
+  .then(function (data) {
+    console.log(data)
+  });
+
+///////
+
+
+JION - connect 2 tables with a common field
+JEFT_JOIN - everything on the left table plus the right table
+INNER_JOIN - fields must be in both tables
+
+Asycronous topic
+
+
+MVC Model View controller
+
+
 
 
 
