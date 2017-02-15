@@ -1326,11 +1326,18 @@ INNER_JOIN - fields must be in both tables
 Asycronous topic
 
 
-MVC Model View controller
+MVC Model View Controller
 
 
+controller (delete id)
+  -> Model (cats) cat.delete
+    ->ORM (all) orm.delete
+      ->SQL Database (DELETE FROM cats WHERE id = ?)
 
+  -> view
+    index.handlebars (delete button)
 
+////////////////////////////////////////////////////////////////15.1	Wed, Feb 14, 2017	Sequelize ORM
 
 
 
