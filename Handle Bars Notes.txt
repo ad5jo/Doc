@@ -1,6 +1,34 @@
 Note for getting stuff done using handlebars Templates
-{{ name }} - double
+{{ name }} - double an expression - look for name in the object
 {{{ name }}} - tripple
+
+Tells the browser that this a a template so the bowser doesn't try to run it as javascript
+<script type="text/template">
+</script> 
+
+looping 
+{{#people}}
+  inside the loop {{variable}} from the array
+{{/people}}
+
+data ={
+  title: 'reaally cool people',
+  people: [
+    {
+      name: 'john',
+      age: 34
+    },
+    {
+      name: 'jane',
+      age: 33
+    }
+  ]
+}
+
+1. need to compile the template
+    var template = Handlebars.compile(...)
+2. output is to the page
+    content.innerHTMP = template(data)
 
 
 
