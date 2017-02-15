@@ -1338,6 +1338,31 @@ controller (delete id)
     index.handlebars (delete button)
 
 ////////////////////////////////////////////////////////////////15.1	Wed, Feb 14, 2017	Sequelize ORM
+http://docs.sequelizejs.com/en/v3/
+
+http://docs.sequelizejs.com/en/latest/
+tableName.sync().then(function() (
+return tableName.create({
+  Country: Sequelize.STRING,
+  PhoneCode: Sequelize.INTEGER,
+  Capital: Sequelize.STRING,
+  IndependenceYear: Sequelize.DATEONLY 
+  });
+});
+Asyncronous
+all return promices so must use the .then
+
+
+sequelize CLI
+npm install 
+
+sequilize init:config
+create a directory called confif with the JSON object
+init:models
+
+
+
+
 
 
 

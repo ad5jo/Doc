@@ -1,0 +1,7 @@
+Note for getting stuff done using handlebars Templates
+{{ name }} - double
+{{{ name }}} - tripple
+
+
+
+.
