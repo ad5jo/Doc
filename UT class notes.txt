@@ -1340,6 +1340,10 @@ controller (delete id)
 ////////////////////////////////////////////////////////////////15.1	Wed, Feb 14, 2017	Sequelize ORM
 http://docs.sequelizejs.com/en/v3/
 
+// globally install the command line
+npm install -g sequelize-cli
+
+
 http://docs.sequelizejs.com/en/latest/
 tableName.sync().then(function() (
 return tableName.create({
@@ -1361,7 +1365,17 @@ create a directory called confif with the JSON object
 init:models
 
 
+15.1	Thu, Feb 16, 2017	Sequelize Associations
 
+Sequelize init models create and index file
+npm install -g sequelize-cli
+
+Validations in sequelize
+nul values
+max length of strings of your database
+
+///////////////////////////////////////////////////////////////////////////////////////
+Saturday, Feb 18, 2017	Sequelize Review
 
 
 

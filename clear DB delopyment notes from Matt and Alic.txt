@@ -1,0 +1,35 @@
+Some Help with Creating and Using ClearDB with NodeJS
+
+N.B. Make sure to have already pushed up your app. It assumes you are working with one remote already;
+
+1. At the root directory of your app, type in the CLI `heroku addons:create cleardb:ignite`
+	//Adds some helpers to allow you to use mysql with your node app;
+
+2. Then type: `heroku config | grep CLEARDB_DATABASE_URL`
+	//Prints Your configuration url;
+	//It will look like: mysql://USERNAME:PASSWORD@HOST/DB_NAME?reconnect=true
+
+3. Save this url. You Will need it for later steps;
+	//the url in step 2 contains your username, password, databaseName, and host;
+
+4. heroku config:set DATABASE_URL='mysql://USERNAME:PASSWORD@HOST/DATABASENAME?reconnect=true'
+	//NOTE: These variables are going to be different than the database you created with mysql; Find these variables in step 2;
+
+5. Make Sure to declare your port as `var port = process.env.PORT | 3000;`
+	//Heroku wants to set your port;
+
+6. Click on Data Export in MySql WorkBench. Export Your Data (i.e. your Database) to a sql file named my_dump_file.sql within the same root directory as your server. 
+	//Make sure to check the .sql option;
+
+7. This is where the magic happens: `mysql --host=HOSTNAME --user=USERNAME --password=PASSWORD --reconnect DATABASENAME < my_dump_file.sql`
+	//NOTE: These variables are going to be different than the database you created with mysql; Find these variables in step 2;
+	//This is adding all your data from your localserver to the remote version.
+
+8. Change your connection.js to the data given in step 2;
+
+9. Optional (but recommended): Cd into your Config file and run `node connection`; if you set up step 8
+ correctly you should see some results; run a simple query to make sure your data is there;
+
+10. Add your app back up to Heroku by typing git add, commit, push, etc.
+
+11. Type, 'heroku open.' If all goes well, your app should be operational!
