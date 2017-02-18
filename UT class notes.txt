@@ -1385,6 +1385,72 @@ press "esc"
 write ":wq"
 then press enter.
 
+Sequelize ---- 
+validate the model on the front end and the back end - always
+
+Joins and associations today
+relationships 1 to many, many to 1
+association most ofen require a join
+in class assignment blogger database
+
+Sequelize built in functions:
+.findAll
+.findOne
+.create
+.destroy
+.update
+
+EER diagram in MySQL Workbench
+forign key
+reverse engineer database - creates a visual model
+in sequelize the terms are .belongsTo .hasMany or .hasOne
+the trick is where to do it in the code
+
+      // We're saying that we want our Author to have Posts
+      classMethods: {
+        associate: function(models) {
+          // An Author (foreignKey) is required or a Post can't be made
+          Post.belongsTo(models.Author, {
+            foreignKey: {
+              allowNull: false
+            }
+          });
+        }
+      }
+
+
+object. <tab> to see all the methods
+
+
+db.Author.findOne({include:[db.Post]})
+
+Migration of Data into a new schema - Tools: scyncronize with any source
+
+redis - very fast data 
+third normal form
+https://en.wikipedia.org/wiki/Third_normal_form
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .
