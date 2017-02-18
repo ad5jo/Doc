@@ -1377,6 +1377,13 @@ max length of strings of your database
 ///////////////////////////////////////////////////////////////////////////////////////
 Saturday, Feb 18, 2017	Sequelize Review
 
+Please enter a commit message to explain why this merge is necessary
+To solve this:
+press "i"
+write your merge message.
+press "esc"
+write ":wq"
+then press enter.
 
 
 
