@@ -1354,7 +1354,7 @@ return tableName.create({
   });
 });
 Asyncronous
-all return promices so must use the .then
+all return promises so must use the .then
 
 
 sequelize CLI
@@ -1430,8 +1430,11 @@ redis - very fast data
 third normal form
 https://en.wikipedia.org/wiki/Third_normal_form
 
+03.04.2017 Saturday Testing
+js-assessment - write thecode to return true for every test
 
-
+talented.tech
+trinet
 
 
 

@@ -1,3 +1,51 @@
+heroku domains
+
+1. create the webpage
+2. heroku create
+3. git push heroku master
+-- https://whispering-springs-85654.herokuapp.com/ 
+4. heroku domains:add www.austin-salsa.com
+5. on heroku grab the link
+6. got to the host website and add the CNAME to the advanced DNS
+
+
+
+
+
+////////////////////////////////////////////////////////////
+week 3 starwars: blooming-crag-35635.herokuapp.com
+durkee-web.com
+heroku domains:add www.durkee-web.com
+
+$ heroku domains:add www.durkee-web.com
+Adding www.durkee-web.com to blooming-crag-35635... done
+ !    Configure your app's DNS provider to point to the DNS Target
+ !    www.durkee-web.com.herokudns.com.
+ !    For help, see https://devcenter.heroku.com/articles/custom-domains
+
+The domain www.durkee-web.com has been enqueued for addition
+ !    Run heroku domains:wait 'www.durkee-web.com' to wait for completion
+
+Dave@LAPTOP-A5OBGJH4 MINGW32 ~/ut/_homework/week-3-game (master)
+/////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+Set the NODE_ENV environment variable to "development" on your local environment, and set it to "production" on Heroku. https://devcenter.heroku.com/articles/nodejs#setting-node-env
+
+How to set proccess.env in Node express app on heroku
+
+Set the NODE_ENV environment variable to "development" on your local environment, and set it to "production" on Heroku. https://devcenter.heroku.com/articles/nodejs#setting-node-env
+
+set NODE_ENV on heroku with: heroku config:set NODE_ENV="production"
+
+console.log(process.env)
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////
 
 
 You can get a list of any configured remote urls with the command git remote -v

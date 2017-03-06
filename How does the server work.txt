@@ -1,0 +1,17 @@
+1. server.js
+	sets up the framework to route to a default webpage.
+	https://expressjs.com/en/starter/static-files.html
+app.use(express.static('public'))
+app.use('/static', express.static(path.join(__dirname, 'public')))
+
+
+http://docs.sequelizejs.com/en/1.7.0/articles/getting-started/
+
+As we want to store data in the database, we need to create a representation of the model.
+Please note, that { force: true } will drop the Users table and re-create it.
+sequelize
+  .sync({ force: true })
+Once executed, the database will contain a table Users (note the plural) with the columns
+
+
+	
