@@ -1436,9 +1436,315 @@ js-assessment - write thecode to return true for every test
 talented.tech
 trinet
 
+03.11.2017 Saturday - Project 2 presentation
+
+and notes
+passport.authenticate
+dragula - drag and drop Triple Monster
+Immigration portal
+Auth0
+Survey.js
+Canvas
+JsPDF
+AWS S3
+D3 engine
+materialize
+amCharts
+Passport
+B-Crypt
+Node Mailer
+Stripe for credit card payments
+
+Zillow
+Ember-cli
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+03.14.2017  Tuesday class
+MongoDB => React => Meteor
+book to read: Learning Javascript design paterns
+documented-oriented model
+stores data in BSON format
+noSQL
+
+MySQL    MongoDB
+
+------   ----------
+Table    Collection
+
+Row    Document
+
+Column    Field
+
+Joins    Embedded documents, linking
+
+Does have collections of BSON 
+Database have multible collections
+http://softwareengineering.stackexchange.com/questions/54373/when-would-someone-use-mongodb-or-similar-over-a-relational-dbms
+https://dzone.com/articles/when-use-mongodb-rather-mysql
+When is a MongoDB good?
+-No rigid schema. If three months down the line you need a certain table to have an extra field, and this and that, you just change it and it ripples out from there on out.
+-You Expect a High Write Load
+-You need High Availability in an Unreliable Environment (Cloud and Real Life)
+-You need to Grow Big (and Shard Your Data)
+-Your Data is Location Based
+-Your Data Set is Going to be Big (starting from 1GB) and Schema is Not Stable
+-You Don't have a DBA
+
+Advantage of mongo?
+-flexable
+-json syntax using javascript instead of sql querys
+
+Disadvantages?
+- scalability and speed.
+
+CAP Theorem
+Consistency	Availability	Partition tolerance
+Every read receives the most recent write or an error	Every request receives a (non-error) response – without guarantee that it contains the most recent write	The system continues to operate despite an arbitrary number of messages being dropped (or delayed) by the network between nodes
+
+# Installing MongoDB on your Machine
+
+### Contents
+
+1. [Installing MongoDB on Windows](#1-installing-mongodb-on-windows)
+2. [Configuring MongoDB on Windows](#2-configuring-mongodb-on-windows)
+3. [Installing MongoDB on MacOS](#3-installing-mongodb-on-macos)
+4. [Configuring MongoDB on MacOS](#4-configuring-mongodb-on-macos)
+
+- - -
+
+## 1. Installing MongoDB on Windows
+
+1. Go to the MongoDB download page: <a href="https://www.mongodb.com/download-center#community" target="_blank">MongoDB Download Center</a>
+
+2. Scroll down, go to the green box with the Community Server Tab highlighted.
+
+3. Go to the dropdown menu labeled "Version." Select "Windows Server 2008 R2 64-bit and later, with SSL support," then click the "DOWNLOAD (msi)" button.
+
+4. The next page will thank you for downloading MongoDB then show a newsletter link. You can ignore this. In a few seconds, your browser will notify you that the file is downloading.
+
+5. Open up Windows Explorer and locate the installation file (it should be in the default directory where your browser stores downloads). Open the file and follow the instructions. 
+
+   * When the installer prompts you to "Choose Setup Type," click the Complete button, then carry on.
+
+   * A window might pop up mid-installation, asking you whether you’re sure you want to download a particular component of MongoDB. Click yes, otherwise the install will fail.
+
+- - -
+
+## 2. Configuring MongoDB on Windows
+
+1. **IMPORTANT**: You need to create a data directory for your MongoDB installation, or it won't run. Open Git Bash, then cd your way to the root directory: 
+2. <code>cd c:</code>
+
+3. Run the following command: 
+4. <code>mkdir -p data/db</code>
+
+5. This is the default location for MongoDB’s databases. You need a directory for your databases, or else you MongoDB will refuse to run.
+
+6. You’ll also want to add MongoDB’s path to the PATH environment variable, so that you can run it easily from the bash command line. 
+7. First, locate the directory where you installed MongoDB. This is likely C:\\Program Files\\MongoDB\\Server\\3.2\\bin. Copy this directory to your clipboard.
+
+8. Then, open up the System menu or Control Panel on your machine, usually accessible via the Start menu or Search Bar in Windows operating systems.
+
+9. Go to Advanced Settings.
+
+   * If you are on Windows 10 and opened the Control Panel, click **System and Security**; **System**; and **Advanced System Settings**.
+
+10. When a new window opens up, click the **Environment Variables** button located toward the bottom of the window.
+
+11. An Environment Variables window should open up. Look at the bottom half of this window, a scrollable table called "System Variables." Look at the Variable column and search for the variable called Path. Click on it, then click the "Edit…" button below. 
+
+12. The next window will look different depending on your version of Windows. You’ll either be able to press the "New" button and paste your MongoDB directory into the input box that shows up, or you’ll have to paste the directory at the end of a long string of other directories. So it goes.
+
+13. If you would prefer video instructions for this part, watch this:
+    [![Youtube Link](http://img.youtube.com/vi/sBdaRlgb4N8/0.jpg)](https://www.youtube.com/watch?v=sBdaRlgb4N8&feature=youtu.be&t=120)
+
+14. Test if it worked: Close your current Git Bash window, then reopen it and run this command: <code>mongod</code> 
+15. **NOTE**: No "b" at the end, simply <code>mongod</code>
+
+16. If mongod is still running, great job! You’ve installed MongoDB. Your instructor will take it from here.
+
+17. If mongod didn’t run, and instead your bash threw a "command not found" error, make sure you added MongoDB’s bin directory to your PATH variable (see step B.3). Then, close out git bash and try running mongod again. 
+
+18. If mongod starts but closes after a series of prompts, make sure you created the data/db directory in your root. MongoDB cannot run without this directory (see steps 2.1-2.2).
+
+19. If you’re still encountering issues starting mongod, please ask for assistance from one of the TAs or the instructor.
+
+- - -
+
+## 3. Installing MongoDB on MacOS
+
+1. Run the following command in terminal:
+2. <code>brew install mongodb --with-openssl</code>
+
+- - -
+
+## 4. Configuring MongoDB on MacOS
+
+1. **IMPORTANT**: You need to create a data directory for your MongoDB installation, or it will not work. First, cd your way to the root directory: 
+2. <code>cd /</code>
+
+3. Now, enter this command: 
+4. <code>mkdir –p /data/db</code>
+
+5. With the data/db directory made, you're ready to run MongoDB. Enter this command in your terminal window: <code>mongod</code>
+6. **NOTE**: No "b" at the end, simply <code>mongod</code>
+
+7. If mongod didn’t exit from your window, great job! You’ve installed MongoDB. Your instructor will take it from here.
+8. If mongod starts but closes after a series of prompts, make sure you created the data/db directory in your root directory, MongoDB cannot run without this directory (see steps 4.1-4.2).
+
+9. If you’re still encountering issues starting mongod, please ask for assistance from one of the TAs or the instructor.
+
+10. If you do not want to us homebrew, you can alternatively follow these instructions: <https://docs.mongodb.com/v3.0/tutorial/install-mongodb-on-os-x/>. However, installing MongoDB without homebrew can be a bit of a headache. Installing homebrew on your mac will make your life as a web developer a metric ton easier.
+
+- - -
+
+### Copyright
+
+Coding Boot Camp (C) 2016. All Rights Reserved.
+
+///////////////////
+
+1. A list of everyone in your row.
+db.classroom.find().pretty()
+
+2. An entry for a single person.
+db.classroom.find({"name":"alec"}).pretty()
+
+3. The entries for all the Mac users in your row.
+db.classroom.find({"os":"mac"}).pretty()
 
 
+db.classroom.update({"os":"win","name":"anthony"}, {})
+db.classroom.drop()
+push()
 
+db
+use lessondb
+
+db.iWantToGoToThere.update({"country": "Morocco"}, {$set: {"continent":"Antartica"}})
+
+db.iWantToGoToThere.update({"country": "Morocco"}, {$set: {"continent":"Antartica"}}, {multi:true})
+
+
+db.iWantToGoToThere.update({"country": "Morocco"}, {$set: {"capital":"Rabat"}})
+
+db.iWantToGoToThere.update({"country": "Morocco"}, {$set: {"capital":"RABAT"}})
+
+db.iWantToGoToThere.update({"country": "Morocco"}, {$push: {"majorcities":"Agadir"}})
+
+db.iWantToGoToThere.remove({"country":"Morocco"})
+
+db.iWantToGoToThere.remove({})
+
+db.iWantToGoToThere.drop()
+
+db.dropDatabase()
+
+
+03.16.2017 Mongo and web scraping
+Cheerio
+
+BSON - binary JSON but compressed
+Startup mongod and the mongo shell and switch to a new db named zoo.
+
+Insert into a collection named animals:
+One entry for each of your five favorite animals.
+
+Each entry should have 
+1. A field of numlegs with an integer of the number of legs that animal has. 
+2. A field of class with that animal's class (mammal, reptile, etc).
+3. A field of avgWeight with an integer of the average weight of the animal in pounds (any reasonable weight, really).
+4. A field of name, with the animal's name.
+5. A field of whatIWouldReallyCallIt with the name of what you would call the animal if you got to name it.
+
+Example:
+
+{
+  "name": "Panda",
+  "numlegs": 4,
+  "class": "mammal",
+  "weight": 254,
+  "whatIWouldReallyCallIt": "Captain Fuzzy Face"
+}
+
+db.animals.find().sort({numlegs:1})
+db.animals.find().sort({numlegs:-1})
+
+
+var mongojs = require("mongojs");
+var db = mongojs("zoo2",["animals"]);
+db.
+
+TODO: Make four routes that display results from your zoo collection
+
+0: Root: Displays a simple "Hello World" message (no mongo required).
+1: All: show every animal in a json
+2: Name: sort results by name in ascending order, in a json
+3: Weight: sort results by weight in descending order, in a json
+
+setup a free mongo hosted solution
+mongoDB hosting
+
+If you see this error:
+Database Error: { [MongoError: failed to connect to server [localhost:27017] on first connect]
+  name: 'MongoError',
+  message: 'failed to connect to server [localhost:27017] on first connect' }
+
+You need to start the mongo damon using 'mongod' in bash
+
+
+1. Make an AJAX function for loading the table in index.html
+with the data from your animals collection in MongoDB.
+Each row should have info for one animal.
+
+2. Make two AJAX functions that fire when users click
+the two buttons on index.html.
+    a. When the user clicks the Weight button, the table should
+    display the animal data sorted by weight.
+    b. When the user clicks the Name button, the table should
+    display the animal data sorted by name. 
+
+Good luck!
+
+# 7
+Students: Using the tools and techniques you learned so far,
+you will scrape a website of your choice, then place the data
+in a MongoDB database. Be sure to make the database and collection
+before running this exercise.
+
+Consult the assignment files from earlier in the class
+if you need a refresher on Cheerio. 
+
+## Route 1 
+This route will retrieve all of the data 
+from the scrapedData collection as json (this will be populated
+by the data you scrape using the next route)
+
+## Route 2
+When you visit this route, the server will
+scrape data from the site of your choice, and save it to
+MongoDB.
+TIP: Think back to how you pushed website data  
+into an empty array in the last class. How do you
+push it into a MongoDB collection instead?
+
+{
+  "title": "the title",
+  "link": "the url link",
+  "class": "mammal",
+  "weight": 254,
+  "whatIWouldReallyCallIt": "Captain Fuzzy Face"
+}
+
+db.scrapedData.save({
+title: title,
+link:link
+})
+
+db.scrapedData.insert({
+title: title,
+link:link
+})
 
 
 
