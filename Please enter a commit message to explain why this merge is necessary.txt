@@ -1,0 +1,9 @@
+Please enter a commit message to explain why this merge is necessary
+
+To solve this:
+press "i"
+write your merge message.
+press "esc"
+write ":wq"
+then press enter.
+
