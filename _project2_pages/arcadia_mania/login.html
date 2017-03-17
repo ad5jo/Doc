@@ -1,0 +1,16 @@
+<!DOCTYPE html><html lang="en"><head><title>Arcadia Mania</title><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Baking Bootstrap Snippets with Jade"><script src="https://cdn.auth0.com/js/lock/10.3/lock.min.js"></script><link href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.0/flatly/bootstrap.min.css" rel="stylesheet"><link href="http://sample-env.fmgsmzjekd.us-east-1.elasticbeanstalk.com/assets/css/style.css" rel="stylesheet"><link rel="shortcut icon" href="assets/img/icon128-2x.png"></head><body style="padding-bottom:10rem;"></body><nav role="navigation" style="border-radius: 0" class="navbar navbar-default"><div class="navbar-header"><button type="button" data-toggle="collapse" data-target="#navbar-inverse" aria-expanded="false" aria-controls="navbar" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="/home" style="color: #ffd700" class="navbar-brand">Arcadia Mania</a></div><div id="navbar-inverse" class="collapse navbar-collapse"><ul class="nav navbar-nav"><li class="dropdown"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle">Games<span class="caret"></span></a><ul role="menu" class="dropdown-menu"><li><a href="/home">Home</a></li><li><a href="/home/checkers.html">Checkers</a></li><li><a href="/home/tictactoe.html">Tic Tac Toe</a></li><li><a href="/home/minesweeper.html">Minesweeper</a></li><li class="divider"></li><li><a href="/scores">High Scores</a></li></ul></li></ul></div></nav><div class="container"><script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script><script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script><div id="root" style="width: 280px; margin: 40px auto; padding: 10px;"></div><script>var lock = new Auth0Lock("M5MS1HhyesypJiDt8ZveV4E4tOxWFKgn", "vdiaz.auth0.com", { closable: false, theme: {
+logo: 'http://a5.mzstatic.com/us/r30/Purple6/v4/e6/60/a7/e660a71a-f4be-7a70-8618-990d54a2d8b0/icon128-2x.png',
+primaryColor: '#666666'
+},
+languageDictionary: {
+title: "Get Ready To Play"
+},  
+avatar: null,
+auth: {
+      redirectUrl: 'http://sample-env.fmgsmzjekd.us-east-1.elasticbeanstalk.com/callback'
+    , responseType: 'code'
+    , params: {
+      scope: 'openid name email picture'
+    }
+  }});
+lock.show();</script></div></html>

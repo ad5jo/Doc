@@ -1,0 +1,24 @@
+/* cyrillic */
+@font-face {
+  font-family: 'Rubik Mono One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Rubik Mono One Regular'), local('RubikMonoOne-Regular'), url(https://fonts.gstatic.com/s/rubikmonoone/v5/e_cupPtD4BrZzotubJD7UXzXl6lMuLqpWwXqtXFzong.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Rubik Mono One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Rubik Mono One Regular'), local('RubikMonoOne-Regular'), url(https://fonts.gstatic.com/s/rubikmonoone/v5/e_cupPtD4BrZzotubJD7Uf4g7rvWyWUx52657Hz2VOo.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Rubik Mono One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Rubik Mono One Regular'), local('RubikMonoOne-Regular'), url(https://fonts.gstatic.com/s/rubikmonoone/v5/e_cupPtD4BrZzotubJD7UQ3XTT7BThT0FYsE7P8VY8A.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}

@@ -1,0 +1,441 @@
+body {
+    background-image: url("../images/resize-iphone.jpg");
+    background-color: #222222;
+    /* resize-iphone: */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Signika', sans-serif;
+}
+
+div.logo {
+    margin: 0 auto;
+    text-align: center;
+    background-color: black;
+    background: linear-gradient(black, transparent);
+}
+
+button#start {
+    background: transparent;
+    border-radius: 8px;
+    border: solid 2px #3AD83A;
+    font-family: Roboto-Medium;
+    font-size: 20px;
+    color: #FFFFFF;
+    width: 100%;
+    position: absolute;
+    max-width: 310px;
+    margin: 0 auto;
+    bottom: 20px;
+    right: 0;
+    left: 0;
+}
+
+div#my-signin2 {
+    margin: auto;
+    position: relative;
+    top: 20px;
+}
+
+.welcome {
+    padding-top: 200px;
+    text-align: center;
+    margin: auto;
+    /* float: none; */
+    max-width: 70%;
+    font-size: 28px;
+}
+
+h1 {
+    /* Welcome to Darrel K.: */
+    font-family: Roboto-Bold;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.search-icon {
+    text-align: center;
+    color: #3AD83A;
+    font-size: 27px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.buttons {
+    width: 60vw;
+    padding-top: 300px;
+    bottom: 20px;
+    margin: 0 auto;
+    max-width: 310px;
+}
+
+.submit-button-wrapper {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+
+button.search-submit {
+    width: 75%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    position: absolute;
+    background: #3AD83A;
+    border-radius: 8px;
+    font-family: Roboto-Medium;
+    font-size: 19px;
+    color: #FFFFFF;
+    max-width: 310px;
+}
+
+.searchbar {
+    padding-top: 30vh;
+    max-width: 650px;
+    margin: auto;
+}
+
+.submit {
+    background: #3AD83A;
+    border-radius: 8px;
+    font-family: Roboto-Medium;
+    font-size: 19px;
+    color: #FFFFFF;
+    width: 79%;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    max-width: 310px;
+}
+
+.dropdown {
+    width: 100%;
+}
+
+.tix-info-container {
+    width: 100%;
+    height: 100vh;
+    padding-top: 40px;
+    display: none;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.section-icon {
+    width: 40px;
+    height: 33px;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.row-icon {
+    width: 49px;
+    height: 34px;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.seat-icon {
+    margin: auto;
+    text-align: center;
+}
+
+button.btn.btn-secondary.btn-lg.dropdown-toggle {
+    color: #3AD83A;
+    z-index: 1;
+}
+
+.icon {
+    background: #4A4A4A;
+    border: 1px solid #979797;
+    height: 80px;
+    float: left;
+    width: 33.3%;
+}
+
+.icon p {
+    color: #3AD83A;
+    text-align: center;
+    /* Section: */
+    font-family: Roboto-Bold;
+    font-size: 14px;
+}
+
+.menu-container {
+    /* Rectangle: */
+    background: rgba(0, 0, 0, 0.5);
+    width: 102%;
+    display: none;
+    color: white;
+}
+
+h1.menu-heading {
+    color: white;
+}
+
+h1.vendor-name {
+    /* China Express: */
+    font-family: Signika-Semibold;
+    font-size: 29px;
+    color: #000000;
+}
+
+h1.menu-item {
+    /* Egg rolls: */
+    font-family: Roboto-Regular;
+    font-size: 22px;
+    color: #9B9B9B;
+}
+
+h1.price {
+    font-size: 19px;
+    color: #000000;
+}
+
+.carousel-indicators {
+    color: #3AD83A;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 50px;
+    height: 8px;
+    margin: 1px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    border-radius: 2px;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.img-fluid {
+    height: 300px;
+    width: 300px;
+    outline: none;
+    display: block;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.torchyTable {
+    margin: 0px 0px 110px 0px;
+    color: white;
+}
+
+.cucinaTable {
+    margin: 0px 0px 110px 0px;
+    color: white;
+}
+
+#ticket {
+    font-size: 38px;
+    color: #3AD83A;
+    position: relative;
+    left: 0%;
+    top: 24px;
+}
+
+#tix-submit {
+    position: absolute;
+    bottom: 20px;
+}
+
+h1.top {
+    position: absolute;
+    top: -10px;
+    left: 5vw;
+    right: 5vw;
+}
+
+.dropdown-wrapper {
+    position: relative;
+    top: 12vh;
+    max-width: 760px;
+    margin: auto;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+}
+
+.checkout-modal {
+    /* Rectangle 6: */
+    background: #000000;
+    border: 3px solid #3AD83A;
+    border-radius: 30px;
+    text-align: center;
+    width: 87%;
+    margin: 30% 6.5%;
+    height: 180px;
+}
+
+.checkout-modal h2 {
+    /* 15: */
+    font-family: Signika-Regular;
+    font-size: 55px;
+    color: #FFFFFF;
+}
+
+.checkout-modal p {
+    /* Your order will be r: */
+    font-family: Roboto-Regular;
+    font-size: 16px;
+    color: #3AD83A;
+}
+
+#x {
+    font-size: 38px;
+    color: #3AD83A;
+}
+
+#bottom-text {
+    position: absolute;
+    bottom: 0px;
+    left: 3%;
+}
+
+.row.bottom-text {
+    position: relative;
+    height: 80%;
+    left: 36%;
+}
+
+.login-container {
+    display: none;
+}
+
+.checkout-modal {
+    display: none;
+}
+
+.welcome-container {
+    position: relative;
+    float: none;
+    background-blend-mode: overlay;
+    /* text-align: center; */
+    background-color: black;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+}
+
+.form-group {
+    width: 75%;
+    margin: auto;
+    padding: 8px 0 4%;
+}
+
+.current-user-container {
+    /* Rectangle: */
+    background: #000000;
+    border: 0 solid #FFFFFF;
+    box-shadow: 3px 3px 1px 0 rgba(0, 0, 0, 0.50);
+    border-radius: 8px;
+    border-color: white;
+    text-align: center;
+    color: #FFFFFF;
+    width: 60%;
+    height: 240px;
+    padding-top: 40px;
+    margin: 25vh auto;
+    font-family: Roboto-Medium, sans-serif;
+    max-width: 450px;
+}
+
+img#theImg {
+    margin: 10px auto;
+}
+
+div#currentUser {
+    margin-top: 2px;
+}
+
+#signout {
+    color: #000000;
+    margin: 4px auto;
+}
+
+#my-signin2>div {
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.form-group label {
+    color: #3AD83A;
+}
+
+#checkout {
+    background: #3AD83A;
+    border-radius: 8px;
+    font-family: Roboto-Medium;
+    font-size: 19px;
+    color: #FFFFFF;
+    width: 79%;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    max-width: 310px;
+    display: none;
+}
+
+
+/*input {
+    width: 30px;
+    color: black;
+    text-align: center;
+}*/
+
+th.quantity input {
+    width: 25px;
+    color: black;
+    margin: -4.5px 80px 0px 83px;
+    display: block;
+    height: 24px;
+    position: relative;
+    top: 5px;
+}
+
+.quantity {
+    text-align: center;
+}
+
+.complete-modal {
+	/* Rectangle 6: */
+	background: #000000;
+	border: 3px solid #3AD83A;
+	border-radius: 30px;
+	text-align: center;
+	width: 87%;
+	margin: 30% 6.5%;
+	height: 180px;
+}
+
+.complete-modal h2 {
+	/* 15: */
+	font-family: Signika-Regular;
+	font-size: 55px;
+	color: #FFFFFF;
+}
+
+.complete-modal p {
+	/* Your order will be r: */
+	font-family: Roboto-Regular;
+	font-size: 16px;
+	color: #3AD83A;
+}
+
+@media screen and (max-width: 640px) {
+    body {
+        background-image: url("../images/resize-iphone.jpg");
+    }
+}

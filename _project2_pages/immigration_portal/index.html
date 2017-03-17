@@ -1,0 +1,91 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Immigration Portal - A site to connect candidates seeking US immigration with pro bono lawyers</title>
+		<meta name="description=" content="We provide a link for immigrants to get lawyer help for free for greencard and naturalization processes.">
+		<!-- jQuery -->
+		<script
+		src="https://code.jquery.com/jquery-3.1.1.js"
+		integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+		crossorigin="anonymous"></script>
+		<!-- Bootstrap -->
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		 <!-- Auth0 lock script -->
+  		<script src="https://cdn.auth0.com/js/lock/10.8/lock.min.js"></script>
+  		<script src="/js/main.js" type="text/javascript"></script>
+
+  		<!-- Setting the right viewport -->
+  		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" href="/css/login_page.css" type="text/css" />	</head>
+	</head>
+	<body>
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+
+<!-- 	just keeping this here for if i plan to use it				<img alt="avatar" id="avatar" style="display:none;">
+					<p>Welcome <span id="nickname"></span></p>
+					<button id="btn-login">Log In</button>
+					<button id="btn-logout">Log Out</button>
+ -->
+					</button>
+					<a class="navbar-brand" href="/surveyList">Immigration Portal</a>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<button type="button" class="btn btn-default" id="btn-logout">Logout</button>
+ 						</li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+		<div class = 'container'>
+<div class = 'row'>
+<div class = 'col-md-12'>
+
+<div id="home_blurb_text">  
+
+  <p class ='text-center'>What we do: Help connect lawyers and immigrants. </p>
+  <p class ='text-center'>Why? How? </p>
+  <p>1. Users looking for help with confusing green card or U.S. citizenship forms instead fill out our simple survey.</p>
+  <p>2. Lawyers review and process everything for USCIS.</p>
+
+
+  <hr>
+
+  <p class = 'text-center'>Are you a pro bono lawyer looking to get involved? Please email <a href="mailto:shaverda@gmail.com?Subject=Lawyer%20help" target="_top">shaverda@gmail.com</a> for more information.</p>
+</div>
+
+
+
+<div id="login" class="row text-center">
+  <h4>Ready to get started?</h4>
+  <button type="button" class="btn btn-primary" id="btn-login">Login</button>
+</div>
+
+
+
+<script src="/js/login.js" type="text/javascript"></script>
+
+
+<!-- this commented out stuff below was all boilerplate that came with auth0,
+just keeping it for reference/if we decide to use it-->
+</div>
+</div>
+</div>
+	</body>
+</html>

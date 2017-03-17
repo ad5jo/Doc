@@ -1,0 +1,325 @@
+
+body {
+  font-family: Roboto, Arial;
+  font-size: 11px;
+
+}
+
+.nav-wrapper {
+    background-color: white;
+    z-index: 997;
+}
+
+.slider-adjustment {
+    position: fixed;
+    top: 64px;
+    /* as nav bar has height of 64px */
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+}
+
+.slider .slides li img {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+
+.whereto-logo {
+    width: 175px;
+    padding: 10px 0px 0px 30px;
+}
+
+.dropdown-content li a {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: none;
+    color: #212121;
+    font-kerning: 2px;
+}
+
+.dropdown-button {
+    color: #7DCED5;
+}
+
+#menu-icon {
+    font-size: 40px;
+}
+
+.section {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    position: absolute;
+    text-align: center;
+    z-index: 900;
+    pointer-events: none;
+    width: 70%;
+    padding: 20px 40px 20px 40px;
+}
+
+.section a {
+    pointer-events: auto;
+    font-family: Roboto;
+}
+
+.mg-rg {
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-top: 5rem;
+}
+
+.section h1 {
+    font-family: Roboto, Arial;
+    font-size: 44px;
+    text-align: center;
+}
+
+.section p {
+    font-family: Roboto, Arial;
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 200;
+    text-align: center;
+}
+
+.section p strong {
+    font-weight: bold;
+}
+
+#find-your-city {
+    display: none;
+    position: absolute;
+    top: 153%;
+    margin-bottom: 25%;
+    font-family: Roboto;
+}
+
+#compare-cities {
+    display: none;
+    position: absolute;
+    margin-bottom: 25%;
+    top: 153%;
+    font-family: Roboto;
+}
+
+.donut {
+    font-size: 25px;
+}
+
+.donut .type {
+    font-size: 30px;
+}
+
+
+/* label focus color */
+
+.input-field input[type=text]:focus+label {
+    color: #4dd0e1;
+}
+
+
+/* icon prefix focus color */
+
+.input-field .prefix.active {
+    color: #4dd0e1;
+}
+
+
+/* label underline focus color */
+
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #4dd0e1;
+    box-shadow: 0 1px 0 0 #e0e0e0;
+}
+
+#heatmap {
+    display: none;
+    width: 80%;
+    position: absolute;
+    top: 205%;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-bottom: 20px;
+}
+
+#comparison {
+    display: none;
+    width: 80%;
+    position: absolute;
+    top: 250%;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-bottom: 20px;
+}
+
+path:hover {
+    fill-opacity: .7;
+}
+
+
+div.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 186px;
+    height: 75px;
+    padding: 6px;
+    font: 12px sans-serif;
+    background: #7dced5;
+    border: 2px;
+    border-radius: 8px;
+    border-color: #1a5d8f;
+    border-style: solid;
+    pointer-events: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    pointer-events: none;
+}
+
+#heatmap .legend {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    margin-top: 100px;
+    overflow: show;
+}
+
+#refresh {
+    margin-right: 3px;
+}
+
+#find-btn {
+    margin-right: 3px;
+}
+
+#compare-btn {
+    margin-left: 3px;
+}
+
+#find-btn,
+#compare-btn {
+    font-size: 1.5em;
+}
+
+#heatmap .start-over {
+    position: absolute;
+    top: 90%;
+    right: 5%;
+}
+
+#buffer div {
+    height: 200px;
+}
+
+
+/* ===ABOUT PAGE=== */
+
+.about-body {
+    margin-top: 60px;
+    padding: 40px;
+}
+
+.about-body p, li {
+    font-size: 2em;
+}
+
+.about-title h1 {
+    text-align: center;
+    font-size: 5em;
+    font-weight: light;
+    color: #7DCED5;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+.concept, .motivation, .design, .technologies, .future {
+    margin: 40px 0px;
+}
+.future ul {
+    list-style-type: circle;
+    margin-left: 20px;
+}
+
+.concept ul {
+    list-style-type: circle;
+    margin-left: 20px;
+}
+
+
+.design ul {
+    list-style-type: circle;
+    margin-left: 20px;
+}
+
+.concept img {
+    margin: 1%;
+}
+
+#d3examples a {
+    font-size: 2em;
+}
+/* ===CONTACT PAGE=== */
+
+.contact-title {
+  margin-top: 70px;
+  position: fixed;
+}
+
+.contact-title p {
+  font-size: 14px;
+  font-family: Roboto; 
+  font-weight: lighter;
+  color: #616161;
+  margin-left: 30px;
+}
+
+.contact-title h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #7DCED5;
+  margin-left: 30px;
+}
+
+#team-cards {
+  max-width: 70%;
+  float: right;
+  padding-top: 30px;
+  padding-bottom: 30px; 
+}
+
+.card-image {
+    width: 300px;
+    height: 300px;
+}
+
+.card {
+    float: left;
+    max-width: 300px;
+    margin: 40px 30px 30px 0px; 
+}
+
+#card-container {
+  background: white;
+  margin-top: 60px;
+  /* Ehhhh. 
+  border-style: solid;
+  border-width: 1px;
+  border-color: #1A5D8F; */ 
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 845px) {
+    #find-btn {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 663px) {
+
+  #find-submit, #compare-submit {
+    margin-bottom: 10px;
+  }
+}
