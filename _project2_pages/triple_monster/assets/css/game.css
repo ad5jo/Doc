@@ -1,0 +1,445 @@
+/* DESKTOP ***********************************************************************/
+
+
+/*********************************************************************************/
+
+@media only screen and (min-width: 996px) {
+    /* BLOCK LEVEL **************************************************************/
+    .container {
+        width: 100vw;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .navbar-fixed {
+        height: 6vh;
+        min-height: 36px;
+    }
+    .row {
+        margin: 0px;
+    }
+    /* ROOMS BAR ****************************************************************/
+    /* static **************************/
+    #rooms_wrapper {
+        direction: rtl;
+        height: 100%;
+        padding: 0px;
+        padding-top: 40px;
+        text-align: center;
+    }
+    #rooms_static {
+        padding: 6px;
+    }
+    #rooms::-webkit-scrollbar {
+        width: 0!important;
+    }
+    #rooms {
+        width: 100%;
+        padding: 0px;
+        height: 68vh;
+        max-height: 68vh;
+        overflow-y: scroll;
+    }
+    #new_room {
+        margin-bottom: 6px;
+        width: 76px;
+        height: 76px;
+    }
+    #new_room_text {
+        margin-bottom: 12px;
+    }
+    /* dynamically generated *************************/
+    .enter_r {
+        padding-top: 0px;
+        margin-bottom: 10px;
+        max-width: 80px;
+        line-height: 110%;
+        font-size: 14px;
+        width: 76px;
+        height: 76px;
+    }
+    #players {
+        text-align: center;
+        font-size: 14px;
+        margin-top: -64px;
+    }
+    /* PLAYER HAND *************************************************************/
+    #hand_wrapper {
+        height: 100%;
+        padding: 25px 20px;
+    }
+    .card_wrapper {
+        width: 104px !important;
+        padding: 0px !important;
+    }
+    .card {
+        border: 2px solid black;
+        border-radius: 5px;
+        margin-bottom: -60px;
+        height: 165px;
+    }
+    /* BOARD GAME **************************************************************/
+    #board_wrapper {
+        height: 100%;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+    }
+    #board {
+        width: 100%;
+        margin-top: 24px;
+        margin-left: 15px;
+    }
+    #row_1,
+    #row_2,
+    #row_3 {
+        margin: 0px;
+    }
+    .cell {
+        border: 1px solid black;
+        width: 25% !important;
+        height: 190px;
+        margin: 4px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+    .cell>div {
+        margin-top: 10px;
+    }
+    /* CHAT **************************************************************/
+    #chat_wrapper {
+        height: 100%;
+        bottom: 0;
+    }
+    #chat {
+        margin: 10px;
+        margin-top: 40px;
+        background-color: beige;
+        height: 76vh;
+        max-height: 76vh;
+        overflow-y: auto;
+        padding: 10px;
+    }
+    #chat::-webkit-scrollbar {
+        width: 0!important;
+    }
+    #main {
+        padding-top: 0px;
+        height: 94vh;
+        width: 100vw;
+        margin: 0px;
+    }
+}
+
+
+/********************************************************************************/
+
+
+/********************************************************************************/
+
+
+/********************** MOBILE MOBILE MOBILE MOBILE MOBILE **********************/
+
+
+/********************************************************************************/
+
+
+/********************************************************************************/
+
+@media only screen and (max-width: 996px) {
+    /* BLOCK LEVEL **************************************************************/
+    body {
+        overflow: hidden;
+    }
+    .container {
+        width: 100vw;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .navbar-fixed {
+        height: 6vh;
+        min-height: 24px;
+    }
+    .row {
+        margin-bottom: 0px;
+    }
+    /* ROOMS BAR ****************************************************************/
+    /* static **************************/
+    #rooms_wrapper {
+        direction: rtl;
+        height: 40vh;
+        padding: 0px;
+        padding-top: 40px;
+        text-align: center;
+        display: inline-block;
+    }
+    #rooms_static {
+        padding: 6px;
+    }
+    #rooms::-webkit-scrollbar {
+        width: 0!important;
+    }
+    #rooms {
+        height: 15%;
+        display: inline-block;
+    }
+    #new_room {
+        margin-bottom: 6px;
+    }
+    #new_room_text {
+        margin-bottom: 12px;
+    }
+    /* dynamically generated *************************/
+    .enter_r {
+        margin-bottom: 10px;
+        max-width: 80px;
+        line-height: 110%;
+        font-size: 14px;
+    }
+    #players {
+        text-align: center;
+        font-size: 14px;
+        margin-top: -64px;
+    }
+    /* PLAYER HAND *************************************************************/
+    #hand_wrapper {
+        height: 20%;
+    }
+    #hand {
+        margin-top: 20px;
+    }
+    /* BOARD GAME **************************************************************/
+    #board_wrapper {
+        height: 65%;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+    }
+    #board {
+        width: 100%;
+        margin-left: 30px;
+    }
+    /* CHAT **************************************************************/
+    #main {
+        padding-top: 0px;
+        height: 94vh;
+        margin-bottom: 0px;
+        min-height: 100px;
+    }
+    .cell {
+        border: 1px solid black;
+        width: 31% !important;
+        height: 140px;
+        margin: 2px;
+    }
+    #row_1,
+    #row_2,
+    #row_3 {
+        margin: 0px;
+    }
+}
+
+
+/* STYLE */
+
+body {
+    background: #3A3022;
+}
+
+#board,
+#hand {
+    transition: opacity 0.4s ease-in-out;
+    cursor: move;
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+
+.nav-wrapper {
+    background: #371800 !important;
+    border: 1px solid #2C1805 !important;
+    border-bottom: 3px solid #592E0D !important;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
+}
+
+.brand-logo-right {
+    margin-left: 20px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #FBDC52;
+    font-family: Kefa-Regular;
+    font-size: 48px;
+    color: #E7A22F;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.50);
+}
+
+#rooms_wrapper,
+#hand_wrapper,
+#board_wrapper,
+#chat_wrapper {
+    border: 0px;
+    background: #3A3022;
+}
+
+#new_room {
+    background: #371800;
+    border: 2px solid #2C1805;
+    border: 2px solid #592E0D;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
+    border-radius: 12px;
+}
+
+i.icon-yellow {
+    color: #EBA828;
+}
+
+.text-yellow {
+    font-family: Kefa-Regular;
+    font-size: 14px;
+    color: #EBA828;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.50);
+}
+
+.enter_r {
+    background: #371800;
+    border: 2px solid #2C1805;
+    border: 2px solid #592E0D;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
+    border-radius: 9px;
+}
+
+#new_room:hover,
+.enter_r:hover {
+    background: #2c1805;
+}
+
+.enterroom {
+    border: 2px solid #c2840d;
+    font-family: Kefa-Regular;
+    font-size: 12px;
+    color: #fbdc52;
+}
+
+.enterroom:hover {
+    border: 2px solid #fbdc52;
+}
+
+.enterroom:active,
+.enterroom:focus {
+    border: 2px solid #fbdc52;
+    background-color: #c2840d;
+    color: #FFF9ED;
+    border-radius: 5px;
+}
+
+.enter_r_owner {
+    border: 2px solid #4a58d7;
+    font-family: Kefa-Regular;
+    font-size: 12px;
+    color: #74F5FF;
+}
+
+.enter_r_owner:hover {
+    border: 2px solid #74f5ff;
+}
+
+.enter_r_owner:focus,
+.enter_r_owner:active {
+    border: 2px solid #74f5ff;
+    background-color: #0072b0;
+    color: #FFF9ED;
+    border-radius: 5px;
+}
+
+.enter_r_guest {
+    border: 2px solid #C25C0D;
+    font-family: Kefa-Regular;
+    font-size: 12px;
+    color: #EB7D28;
+}
+
+.enter_r_guest:hover {
+    border: 2px solid #eb7d28;
+}
+
+.enter_r_guest:active,
+.enter_r_guest:focus {
+    border: 2px solid #2c1805;
+    background-color: #eb7d28;
+    color: #2c1805;
+    border-radius: 5px;
+}
+
+.cell {
+    background-color: #918674;
+    border: 3px solid #231D15;
+    border: 2px solid #F2E0C2;
+    border-radius: 6px;
+}
+
+::-webkit-input-placeholder {
+    font-family: Kefa-Regular;
+    font-size: 14px;
+    color: #EBA828;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.50);
+}
+
+.color1 {
+    background-color: #EB7D28 !important;
+}
+
+.color2 {
+    background-color: #74F5FF !important;
+}
+
+
+/* LOGIN **********************************************************/
+
+.text-center {
+    margin-left: 20px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #FBDC52;
+    font-family: Kefa-Regular;
+    font-size: 48px;
+    color: #E7A22F;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.50);
+}
+
+.landing-title {
+    position: absolute;
+    top: 30vh;
+    left: 30vw;
+}
+
+.landing-buttons {
+    position: absolute;
+    top: 50vh;
+    left: 39vw;
+}
+
+.login-button {
+    display: absolute;
+    top: 0vh;
+    left: 18vw;
+}
+
+.btn {
+    margin: 5px;
+}
+
+.card-image {
+    height: 100%;
+}
+
+.powers {
+    z-index: 10;
+    position: absolute;
+    top: 0px;
+    left: 30px
+}
+
+.text-blue {
+    font-family: Kefa-Regular;
+    font-size: 14px;
+    color: darkblue;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.70);
+    line-height: 100%;
+}

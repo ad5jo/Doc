@@ -1,0 +1,21 @@
+body {
+    background-size: cover;
+    background-image: url("https://jcsla.files.wordpress.com/2013/04/faded_flag.gif");
+    min-height: 100%;
+}
+
+#home_blurb_text {
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+}
+
+#home_blurb_text p {
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-weight: 500;
+    color: #000000;
+}

@@ -1,0 +1,203 @@
+/* Banner at top of page */
+.jumbotron {
+	text-align: center;
+}
+
+
+/* Welcome screen section */
+#welcome-screen {
+	
+}
+
+/* Elements of the welcome screen that fade in at load */
+.hidden{
+	display: none;
+}
+
+/* Elements of the welcome screen that fade in timeout after load */
+.hide{
+	display: none;
+}
+
+/* Welcome screen section */
+#submit-name {
+	
+}
+
+/* Section that holds the game rooms */
+#lobby {
+	display: none;
+}
+
+
+/* Game board */
+#game-board {
+	display: none;
+}
+
+.map-body {
+	text-align: center;
+}
+
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	text-align: center;
+}
+
+
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+.location {
+	height: 25px;
+	width: 25px;
+	font-size: 8px;
+	text-align: center;
+	background-color: dodgerblue;
+	border-width: 3px;
+    border-radius: 0px;
+    border-color: black;
+}
+
+.game-col {
+	display: inline-block;
+	text-align: center;
+	margin: auto;
+	padding: 15px;
+}
+
+.placing {
+	background-color: yellow;
+}
+
+.placed {
+	background-color: limegreen;
+}
+
+.ship {
+	text-align: center;
+}
+
+.submit {
+	background-color: orange;
+    display: block;
+    margin: 0 auto;
+}
+
+#info {
+	text-align: center;
+	margin-top: -25px;
+}
+
+.rotate {
+	background-color: coral;
+	margin-top: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+.shipPlaced {
+	color: lightgrey;
+	font-style: italic;
+}
+
+.selected {
+	color: yellow;
+}
+
+.enemyGrid {
+	height: 15px;
+	width: 15px;
+	font-size: 8px;
+	text-align: center;
+	background-color: dodgerblue;
+	border-width: 3px;
+    border-radius: 0px;
+    border-color: black;
+}
+
+.hit {
+	height: 15px;
+	width: 15px;
+	font-size: 8px;
+	text-align: center;
+	background-color: red;
+	border-width: 3px;
+    border-radius: 0px;
+    border-color: black;
+}
+
+.miss {
+	height: 15px;
+	width: 15px;
+	font-size: 8px;
+	text-align: center;
+	background-color: grey;
+	border-width: 3px;
+    border-radius: 0px;
+    border-color: black;
+}
+
+.room {
+	width: 200px;
+    height: 100px;
+    margin: 0 auto;
+    display: block;
+}
+
+#submit-name {
+	margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
+
+#player-name {
+	margin: 0 auto;
+    display: block;
+	width: 300px;
+	text-align: center;
+}
+
+.panel-title {
+	text-align: center;
+}
+
+h1 {
+	font-family: 'Lobster', cursive;
+}
+
+.center {
+	text-align: center;
+}
+
+.fade {
+    opacity: 0;
+    -webkit-transition: opacity 1s linear;
+    transition: opacity 1s linear;
+}
+
+h3, h4, p {
+	font-family: 'Roboto', sans-serif;
+}
+
+
+
+/* 
+
+@media only screen and (min-width: 1000px) {
+
+
+
+
+
+
+}
+
+
+*/

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>where to?</title>
+    <meta charset="UTF-8" />
+    <meta name="google-site-verification" content="1up_0NLXLf4DFxm34CbnKlBedGQfA6VjOvkiSkY6oWw" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Meyer Reset-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" />
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+</head>
+
+<body>
+    <!--NAV BAR-->
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="/about">About</a></li>
+        <li class="divider"></li>
+        <li><a href="/contact">Contact</a></li>
+        <li class="divider"></li>
+        <li><a href="https://shrouded-beyond-34634.herokuapp.com/">I'm here! Now what?</a></li>
+    </ul>
+    <div class="navbar-fixed">
+        <nav >
+            <div class="nav-wrapper white">
+                <a id="logo-container" href="/" class="brand-logo left"><img class="whereto-logo" src="assets/images/whereToLogo-small.png"></a>
+                <ul class="right">
+                    <!-- Dropdown Trigger -->
+                    <li><a class="dropdown-button" data-activates="dropdown1"><i id="menu-icon" class="material-icons">menu</i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!--FULL SCREEN SLIDER-->
+    <div class="slider-adjustment">
+        <div class="slider fullscreen">
+            <!--APP INFO -->
+            <div class="section mg-rg ">
+                <div class="flow-text">
+                    <div class="row center">
+                        <h1 class="header col s12 light">Looking for your next big move?</h1>
+                    </div>
+                    <div class="row center">
+                        <!--BOLD "WHERE TO?"-->
+                        <p class="header col s12 light"><strong class="bold">where to?</strong> will help you find your ideal city based on your current occupation. If you want help deciding between two cities, <strong class="bold">where to?</strong> will let you compare several cost of living indexes.</p>
+                    </div>
+                </div>
+                <br>
+                <div class="row center">
+                    <a href="#" id="find-btn" class="btn-large waves-effect waves-light cyan lighten-2">Search by Occupation</a>
+                    <a href="#" id="compare-btn" class="btn-large waves-effect waves-light cyan lighten-2">Compare Two Cities</a>
+                </div>
+            </div>
+            <ul class="slides">
+                <li>
+                    <img src="assets/images/atx-crop3.jpg">
+                </li>
+                <li>
+                    <img src="assets/images/nycity-crop1.jpg">
+                </li>
+                <li>
+                    <img src="assets/images/chicago-crop.jpg">
+                </li>
+                <li>
+                    <img src="assets/images/sanfrancisco-crop.jpg">
+                </li>
+                <li>
+                    <img src="assets/images/seattle-crop.jpg">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--CITY BY OCCUPATION -->
+    <div class="container" id="find-your-city">
+        <div class="row">
+            <div class="col s3">
+            </div>
+            <div class="input-field col s6">
+                <i class="material-icons prefix">work</i>
+                <input type="text" id="occupation-auto" class="autocomplete">
+                <label for="autocomplete-input">Enter Your Occupation</label>
+            </div>
+            <div class="col s3">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s3">
+            </div>
+            <div class="col s6">
+                <!--Submit and Back to Top Buttons-->
+                <button id="find-submit" class="btn waves-effect waves-light cyan lighten-3" type="submit" name="action">Submit<i class="material-icons right">send</i>
+                </button>
+                <a class="waves-effect waves-light btn cyan lighten-3 scroll-up">Back to Top</a>
+            </div>
+            <div class="col s3">
+            </div>
+        </div>
+    </div>
+    <!--COMPARE CITY TO CITY  (icon location_on)-->
+    <div class="container" id="compare-cities">
+        <div id="buffer" class="row">
+            <div class="col s12">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s3">
+            </div>
+            <div class="input-field col s6">
+                <i class="material-icons prefix">location_on</i>
+                <input type="text" class="autocomplete city-auto" id="city1">
+                <label for="autocomplete-input">Enter a City</label>
+            </div>
+            <div class="col s3">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col s3">
+            </div>
+            <div class="input-field col s6">
+                <i class="material-icons prefix">location_on</i>
+                <input type="text" class="autocomplete city-auto" id="city2">
+                <label for="autocomplete-input">Enter a City</label>
+                <div id="validation"></div>
+            </div>
+            <div class="col s3">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s3">
+            </div>
+            <div class="col s6">
+                <!--Submit and Back to Top Buttons-->
+                <button id="compare-submit" class="btn waves-effect waves-light cyan lighten-3" type="submit" name="action">Submit<i class="material-icons right">send</i>
+                </button>
+                <a class="waves-effect waves-light btn cyan lighten-3 scroll-up">Back to Top</a>
+            </div>
+            <div class="col s3">
+            </div>
+        </div>
+    </div>
+    <!--Display area for "Find Your City" Results-->
+    <div id="heatmap">
+    </div>
+    <!--Display area for "Compare Two Cities" Results-->
+    <div id="comparison">
+    </div>
+    <!--JS Libraries-->
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!--MATERIALIZE JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="assets/js/views.js"></script>
+</body>
+
+</html>
