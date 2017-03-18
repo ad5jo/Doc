@@ -1747,6 +1747,84 @@ link:link
 })
 
 
+//////////////////////////////////////////////////////////////////////////////
+03.18.2017 Career Class 9am-10am
+Youssef Chaker
+AMA: From Idea to Startup with Youssef Chaker-Founder at Bear & Giraffe LLC
+local web dev. 
+Fractional Services
+Tech
+Mentorship
+MVP
+
+jogabo pich up games
+Bookwitty
+
+Senior developers with a big ego
+Junior developer is easier to teach
+
+Senior devs dont write tests
+
+Ruby has lots of features
+Ruby is english like syntax
+Ask questions
+
+git hub shows open source activity
+git lab serverisopen source
+
+have 2projects open source that you can show during and interviedw
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+18.3	Sat, Mar 18, 2017	Mongoose ORM
+
+mongojs.ObjectId(req.params.id) - why is mongojs.ObjectId required? It is an object not a string
+
+Mongoose gives us validation, casting and business logic for mongo databases
+
+promise - is like .then
+model == schema
+regex tester
+
+validate [funcition() {}]
+
+YARN
+ npm install everytime
+
+// Adding new class methods to mongoose
+coolifier
+UserSchema.methods.coolifier = function
+var user = New ...
+user.coolifier();
+
+a person with many books can have association saved by book id saved to the person
+
+Associations
+uses a book. uses std syntax
+create the model, schema then export
+ref: "book" a special ID booklibrary.findOneAndUpdate
+This is a library
+
+.populate("notes");
+    .exec(function()
+    {
+    	
+    })
+Use Monge when You  dont have a lot od relationships
+storing data with few queries
+
+
+
+////////////////
+.findone
+or
+.findbyid // uses less code
+
+.populate_"note");
+.exec
+Article.findOneAndUpdate
+get the not then using the not update
+using mongo we need to keep our references accurate manually. This is the weakness.
 
 
 
