@@ -1826,7 +1826,97 @@ Article.findOneAndUpdate
 get the not then using the not update
 using mongo we need to keep our references accurate manually. This is the weakness.
 
+03.21.2017 Tuesday React
+ember-difficlt to set up, must do thing there way
+Angular - 2 way bindings, Angular directives, 
+os js library - ES^ uses babel
 
+With your group, answer each of the following questions using the ReactJS Documentation:
+----------------------------------------------------------------------------------------
+
+Part I:
+1. What are the benefits of using ReactJS? addition of prebuilt components. 
+
+Advantages of using React:
+	-easy to know how a component is rendered, you just look at the render function.
+	-JSX makes it easy to read the code of your components. It is also really easy to see the layout, or how components are plugged/combined with each other.
+	-you can render React on the server-side.
+	-it is easy to test, and you can also integrate some tools like jest.
+	-it ensures readability and makes maintainability easier. * BEST reason to use React
+	-you can use React with any framework (Backbone.js, Angular.js) as it is only a view layer.
+
+What is not so good about React?
+	-it is only a view layer, you have still to plug your code for Ajax requests, events and so on. Some people get surprised by that.
+	-the library itself is pretty large.
+	-the learning curve can be steep.
+
+2. What is the significance of the React.createClass() method? If you don't use ES6 classes, you may use this helper instead.
+
+3. What is the significance of the ReactDOM.render() function? To render a React element into a root DOM node, pass both to 
+
+4. What is JSX? Why does React recommend it? (Hint: See documentation on "Displaying Data") JSX is a preprocessor step that adds XML syntax to JavaScript. You can definitely use React without JSX but JSX makes React a lot more elegant
+
+5. How do I incorporate a JSX script into my HTML? (Hint: See documentation on "Displaying Data") Tags, uses curly braces
+
+6. What is Babel? And what role does it play in converting JSX into vanilla JavaScript? Its a javascript compiler
+
+7. What is the significance of { } curly braces in JSX? (Hint: See "JSX in Depth") Around the tags
+
+8. What is the difference between a prop and a state? (Hint: See articles on "Thinking in React", "Interactivity and Dynamic UIs")
+ two types of "model" data:
+1. Per React's Thinking in React documentation, props are best explained as "a way of passing data from parent to child.", ~parameters
+2. State is best described as how a component's data looks at a given point in time. 
+
+9. Create a Simple Hello World Application with React
+ReactDOM.render(
+  <h1>Hello, world!</h1>,
+  document.getElementById('root')
+);
+
+Part II:
+- Note at least 1-3 questions, curiosities, or mysteries you stumble into as you tread through the ReactJS documentation
+
+Part III:
+- If you finish early, begin reading and working through the ReactJS Tutorial: https://facebook.github.io/react/docs/tutorial.html
+
+
+var test = <div>this</div>
+
+For sublime:
+CTRL+SHIFT+P install babel
+npm install webpack -g
+
+webpack -w
+
+can only have 1 element when using webpack ( when .render)
+
+{variables} as compared to handle bars which uses {{ }}
+{w+e} // math
+
+to get the examples to work: npm install then webpack -w
+
+<tagName/> is self closing
+
+//////////////////////////////////////////////
+
+// Include React
+var React = require("react");
+
+// Create the Header component
+// Notice how the header uses React.createClass
+// Notice how it uses a render function which specifies what will be displayed by the component
+
+class Header extends React.Component {
+  render() {
+    return <h1>I'm a header!</h1>
+  }
+}
+
+// Export the component back for use in other files
+module.exports = Header;
+
+//////////////////////////////////////////////////
+require the tag then use the tag
 
 
 
