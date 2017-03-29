@@ -1918,12 +1918,77 @@ module.exports = Header;
 //////////////////////////////////////////////////
 require the tag then use the tag
 
+////////////////////////////////////////////////////////////////////////////////////////////////////
+03.23.2017 React
+React is a declarative, efficient, and flexible JavaScript library for building user interfaces
+1. babel
+2. webpack -w - (the w neans watch) compiles
+3. react chrome extension (react developer tools)
+
+Best way to define a component:
+class Header extends React.Component {
+  render() {
+    return <h1>I'm a header!</h1>
+  }
+}
+
+Add a walk through, complicated component
+
+Make it go:
+ReactDOM.render()*
+
+How to use (deploy) a component?
+<component/>
+
+pass attributes as tags:
+<header person = "John Doe"/>
+{this.props.person}
+
+props external from class
+state internal to the class
+
+this.setState(
+Today we will be nesting components within components
+
+npm install
+webpack -w
+start a local server:
+	MAC: python -m SimpleHTTPServer
+	WIN: 
+
+03.25.2017 React
+
+D'Anne - s corp
+MERN stack (mongo express react)
+A react router - prevents page refreshes 
+How to manage local storage
+react component life cycle - 
+Kaleidoscope - to see the diffs
+axios - HTTP request library. get and save data. Connects the front end to the backend.
+morgan - log out
+mongoose - orm for mongoDB
+ .bind(this), apply, or call
+map function replaces the for loop, second parameter of map , i is index, key ={i}
+
+/////////////
+
+this.props.children
 
 
+03.28.2017 React Native Tuesday
+Facebook
 
+export default class App extends Component {
 
+differences between reactJS and react Native:
+1.
 
+3 ways to handle style:
+1. <View style="">
+2. <View style={styles.container}>
+3. <View style={[styles.container,styles.box]}>
 
+in the child constructor, super() inherits the parent properties
 
 
 
