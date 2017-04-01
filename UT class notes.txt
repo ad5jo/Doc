@@ -2055,14 +2055,63 @@ export default class Form extends React.Component {
 
 ///////////////////////////////////////////////////////////////////
 20.3	Sat, Apr 1, 2017	Sat, Apr 1, 2017	React Native / Intro to Project # 3
+An App:
+1. Display info
+2. get user input and use and API got git info
+3. multiple screens using react native
+
+use settimeout to rotate the displaying scene
+  // Life-cycle method that will run the following code once the component has been mounted...
+  componentDidMount() {
+    // Call the nextPage function which will transition us to the home page after 2 seconds
+    setTimeout(() => this.nextPage(), 2000);
+  }
+  // The nextPage function takes us to the home page
+  nextPage() {
+    // Pushes a new route to the navigation stack. This will be our home page since it has an id of 1
+    this.props.navigator.push({
+      id: 1
+    });
+  }
+
+}
 
 
 
+<Navigator>
+renderScene(route, navigator)
+configureScene
+
+...route.passProps
+https://rainsoft.io/how-three-dots-changed-javascript/
+spread operator
+
+onPress event
+this.press
+
+// Entry point:
+export default class MultipleSceneApp extends Component {
+
+backbone.js - writes very detailed comments backbonejs.org
 
 
-
-
-
+Final Project:
+Anything you want to do
+Javascript design patterns online free
+What Project Management System waffle.io and github
+Must:
+ReactJS
+Node and Express Web Server
+MySQL or MongoDB with Sequelize or Mngoose ORM
+GET and POST
+Deploy on Heroku
+2 new librarys
+Authentication of user (AUTH0.com)
+GraphQL
+polished UI to impress the recruiter
+proper folder structure
+proper coding standards eslint.org
+airbnb javascript - coding standard
 
 
 
