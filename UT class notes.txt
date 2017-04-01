@@ -1990,6 +1990,85 @@ differences between reactJS and react Native:
 
 in the child constructor, super() inherits the parent properties
 
+03.30.2017 Thursday React Native
+What is react native? One ring to rule them all.
+
+A React Native app is a real mobile app. With React Native, you don't build a “mobile web app”, an “HTML5 app”, or a “hybrid app”. You build a real mobile app that's indistinguishable from an app built using Objective-C or Java. React Native uses the same fundamental UI building blocks as regular iOS and Android apps
+
+Differences
+1. DIV vs View
+2. Javascript sv Java
+3. CSS vs Special Style sheet
+
+Goals
+1. Break down parts into components
+
+
+Lifecycle
+super() // inharets the parent
+this.state = {
+study:True
+}
+
+AppRegistry.registerComponent('MovieSearchApp', () => MovieSearchApp); // entry point
+
+
+event.target.value  // to get the text in react for web
+event.nativeevent.text // to get the text in react native
+
+response . JSON is a promise
+
+https://www.npmjs.com/package/rninit
+
+rninit is an alternative to react-native-cli. With a --source argument, you can use a specific react-native version to initialize a new project.
+
+npm i -g rninit
+
+events should be called in the componentWillReceiveProps in the life cycle
+
+https://developmentarc.gitbooks.io/react-indepth/content/life_cycle/update/component_will_receive_props.html
+
+import React from 'react';
+import Person from './Person';
+
+export default class Form extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state        = { name: '' } ;
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  handleChange(event) {
+    this.setState({ name: event.currentTarget.value });
+  }
+
+  render() {
+    return (
+      <div>
+        <input type="text" onChange={ this.handleChange } />
+        <Person name={ this.state.name } />
+      </div>
+    );
+  }
+}
+
+
+///////////////////////////////////////////////////////////////////
+20.3	Sat, Apr 1, 2017	Sat, Apr 1, 2017	React Native / Intro to Project # 3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
