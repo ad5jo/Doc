@@ -1918,7 +1918,200 @@ module.exports = Header;
 //////////////////////////////////////////////////
 require the tag then use the tag
 
+////////////////////////////////////////////////////////////////////////////////////////////////////
+03.23.2017 React
+React is a declarative, efficient, and flexible JavaScript library for building user interfaces
+1. babel
+2. webpack -w - (the w neans watch) compiles
+3. react chrome extension (react developer tools)
 
+Best way to define a component:
+class Header extends React.Component {
+  render() {
+    return <h1>I'm a header!</h1>
+  }
+}
+
+Add a walk through, complicated component
+
+Make it go:
+ReactDOM.render()*
+
+How to use (deploy) a component?
+<component/>
+
+pass attributes as tags:
+<header person = "John Doe"/>
+{this.props.person}
+
+props external from class
+state internal to the class
+
+this.setState(
+Today we will be nesting components within components
+
+npm install
+webpack -w
+start a local server:
+	MAC: python -m SimpleHTTPServer
+	WIN: 
+
+03.25.2017 React
+
+D'Anne - s corp
+MERN stack (mongo express react)
+A react router - prevents page refreshes 
+How to manage local storage
+react component life cycle - 
+Kaleidoscope - to see the diffs
+axios - HTTP request library. get and save data. Connects the front end to the backend.
+morgan - log out
+mongoose - orm for mongoDB
+ .bind(this), apply, or call
+map function replaces the for loop, second parameter of map , i is index, key ={i}
+
+/////////////
+
+this.props.children
+
+
+03.28.2017 React Native Tuesday
+Facebook
+
+export default class App extends Component {
+
+differences between reactJS and react Native:
+1.
+
+3 ways to handle style:
+1. <View style="">
+2. <View style={styles.container}>
+3. <View style={[styles.container,styles.box]}>
+
+in the child constructor, super() inherits the parent properties
+
+03.30.2017 Thursday React Native
+What is react native? One ring to rule them all.
+
+A React Native app is a real mobile app. With React Native, you don't build a “mobile web app”, an “HTML5 app”, or a “hybrid app”. You build a real mobile app that's indistinguishable from an app built using Objective-C or Java. React Native uses the same fundamental UI building blocks as regular iOS and Android apps
+
+Differences
+1. DIV vs View
+2. Javascript sv Java
+3. CSS vs Special Style sheet
+
+Goals
+1. Break down parts into components
+
+
+Lifecycle
+super() // inharets the parent
+this.state = {
+study:True
+}
+
+AppRegistry.registerComponent('MovieSearchApp', () => MovieSearchApp); // entry point
+
+
+event.target.value  // to get the text in react for web
+event.nativeevent.text // to get the text in react native
+
+response . JSON is a promise
+
+https://www.npmjs.com/package/rninit
+
+rninit is an alternative to react-native-cli. With a --source argument, you can use a specific react-native version to initialize a new project.
+
+npm i -g rninit
+
+events should be called in the componentWillReceiveProps in the life cycle
+
+https://developmentarc.gitbooks.io/react-indepth/content/life_cycle/update/component_will_receive_props.html
+
+import React from 'react';
+import Person from './Person';
+
+export default class Form extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state        = { name: '' } ;
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  handleChange(event) {
+    this.setState({ name: event.currentTarget.value });
+  }
+
+  render() {
+    return (
+      <div>
+        <input type="text" onChange={ this.handleChange } />
+        <Person name={ this.state.name } />
+      </div>
+    );
+  }
+}
+
+
+///////////////////////////////////////////////////////////////////
+20.3	Sat, Apr 1, 2017	Sat, Apr 1, 2017	React Native / Intro to Project # 3
+An App:
+1. Display info
+2. get user input and use and API got git info
+3. multiple screens using react native
+
+use settimeout to rotate the displaying scene
+  // Life-cycle method that will run the following code once the component has been mounted...
+  componentDidMount() {
+    // Call the nextPage function which will transition us to the home page after 2 seconds
+    setTimeout(() => this.nextPage(), 2000);
+  }
+  // The nextPage function takes us to the home page
+  nextPage() {
+    // Pushes a new route to the navigation stack. This will be our home page since it has an id of 1
+    this.props.navigator.push({
+      id: 1
+    });
+  }
+
+}
+
+
+
+<Navigator>
+renderScene(route, navigator)
+configureScene
+
+...route.passProps
+https://rainsoft.io/how-three-dots-changed-javascript/
+spread operator
+
+onPress event
+this.press
+
+// Entry point:
+export default class MultipleSceneApp extends Component {
+
+backbone.js - writes very detailed comments backbonejs.org
+
+
+Final Project:
+Anything you want to do
+Javascript design patterns online free
+What Project Management System waffle.io and github
+Must:
+ReactJS
+Node and Express Web Server
+MySQL or MongoDB with Sequelize or Mngoose ORM
+GET and POST
+Deploy on Heroku
+2 new librarys
+Authentication of user (AUTH0.com)
+GraphQL
+polished UI to impress the recruiter
+proper folder structure
+proper coding standards eslint.org
+airbnb javascript - coding standard
 
 
 
