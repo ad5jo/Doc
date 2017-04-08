@@ -2116,8 +2116,15 @@ airbnb javascript - coding standard
 
 
 
+//// 04.06.2017 sorting
+
+1. bubble sort
+2. insertion sort
+3. 
+4.Quick Sort
 
 
+/// 04.08.2017 Saturday
 
 
 
