@@ -2125,7 +2125,13 @@ airbnb javascript - coding standard
 
 
 /// 04.08.2017 Saturday
+comp sci fundamentals lecture
+O notation means it is linear
+head always executes only the first instruction
 
+Binary Search tree
+
+04.15.2017 Saturday
 
 
 
