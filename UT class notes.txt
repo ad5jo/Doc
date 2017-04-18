@@ -2132,6 +2132,73 @@ head always executes only the first instruction
 Binary Search tree
 
 04.15.2017 Saturday
+Server management is a pain. So let someone else handle it:
+heroku
+elasticbeanstalk
+
+Serverless - provide a function for your API endpoint, we handle everything else
+
+function index(){
+	var data = getdate();
+	return data;
+}
+
+a route to a resource is resource becase you can post and get (not just one of them)
+
+sequalize = find to get all
+php = all to get all
+sql = selct * to get all
+
+find(id)
+csrf_field token cross sight return forgery ??
+
+https://www.npmjs.com/package/Faker
+
+php artisan make:seeder UserTableSeeder
+php artisan db:seed
+
+Setps
+1. composer install
+2. touch database/database.sqlite
+3. php artisan db:seed
+4. php artisan tinlcer
+
+php artisan serve
+
+php artisan route:list
+
+< form submit ... method="_method" dat = "patch">// in html we are only allowed post or get, to do 
+
+$user = User::find($id)
+$user->name = $request->name;
+$user->email = $request->email;
+$user->save();
+
+return redirect()->action('UserController@show', [$id]; // random syntax
+
+Relationships:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
