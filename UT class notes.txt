@@ -2178,15 +2178,29 @@ return redirect()->action('UserController@show', [$id]; // random syntax
 
 Relationships:
 
+////////////////////////////////////////////////////////////
+
+04.18.2017 Tuesday React Redux
 
 
 
+04.22.2018 Saturday Mock Interviews and Photo shoot
+Ken Murdock
+Key performance indicators
+soft skills - qualities that would make you ouststanding for a specific job
+software filter looking for keywords - collaborate
 
+Resume:
+Calibre - use a non seriff font
+Don't put your street number
+cell phone
+email (gmail is rejected ofter)
+no politics on resume!
+no golf - ir takes up time from the job
+pleasent voice mail
+do use a linkedin photo
 
-
-
-
-
+When do you need Ken? If you are not a good writer!
 
 
 
